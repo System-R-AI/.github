@@ -1,19 +1,39 @@
 ## System R AI
 
-**Trading and investment operating system for AI agents.**
+**Trading and investment operating system for AI agents**
 
-System R is a complete platform where AI agents access institutional-grade trading infrastructure: position sizing, risk validation, regime detection, Greeks analysis, equity curves, signal scoring, trade planning, compliance checks, and more. 380+ API endpoints backed by 13,241+ verified tests.
+### The Platform
 
-### Platform
+System R is not a chatbot that answers questions about markets. It is a complete operating system where AI agents get the same infrastructure that institutional trading desks rely on: risk management, position sizing, compliance validation, execution routing, portfolio analytics, and real-time intelligence. Agents connect, authenticate, deposit compute credits, and operate across 25 brokers and exchanges spanning 9 asset classes.
 
-[agents.systemr.ai](https://agents.systemr.ai) is live. 55 tools. 25 brokers and exchanges. Pay per call.
+Every tool is built for programmatic access. 18 statistical analysis tools cover regime detection, volatility modeling, Greeks analysis, equity curves, signal scoring, correlation matrices, and drawdown analysis. 11 intelligence tools deliver sentiment, earnings, macro, geopolitical, sector rotation, and flow analysis. Trade planning tools handle position sizing with Kelly criterion, risk of ruin, and multi-leg options structuring. Execution goes through a pre-trade gate that validates risk, compliance, and account state before any order touches a broker. Memory, ML pipelines, and journaling round out the system. 380+ API endpoints, all backed by 13,241+ verified tests.
 
-Deposit OSR, SOL, USDC, USDT, or PYUSD for compute credits. Presale buyers get 20% permanent discount.
+### By the Numbers
 
+| Metric | Value |
+|---|---|
+| **MCP Tools** | 55 |
+| **Brokers and Exchanges** | 25 |
+| **API Endpoints** | 380+ |
+| **Verified Tests** | 13,241+ |
+| **Asset Classes** | 9 (equities, options, futures, forex, crypto, commodities, energy, fixed income, prediction markets) |
+| **Payment Methods** | 5 (OSR, SOL, USDC, USDT, PYUSD) |
+
+### Get Started
+
+**1. Register**
+```bash
+curl -X POST https://agents.systemr.ai/api/v1/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"email": "agent@example.com", "password": "your-password"}'
+```
+
+**2. Install**
 ```bash
 pip install systemr
 ```
 
+**3. Call**
 ```python
 from systemr import SystemRClient
 
@@ -25,11 +45,33 @@ gate = client.pre_trade_gate(
 )
 ```
 
+### Tool Categories
+
+| Category | Count | Examples |
+|---|---|---|
+| **Core** | 4 | Pre-trade gate, portfolio snapshot, account overview, order management |
+| **Analysis** | 18 | Regime detection, volatility modeling, Greeks, equity curves, signal scoring, correlation |
+| **Intelligence** | 11 | Sentiment, earnings, macro, geopolitical, sector rotation, flow analysis |
+| **Planning** | 4 | Position sizing, Kelly criterion, risk of ruin, multi-leg structuring |
+| **Data** | 3 | Market data, historical bars, options chains |
+| **System** | 5 | Health, usage, rate limits, API keys, webhooks |
+| **Compound** | 2 | Full analysis pipeline, research-to-trade workflow |
+| **Memory and ML** | 7 | Pattern storage, model training, prediction, feature engineering |
+| **Journal** | 1 | Trade journaling with tagging and review |
+
+### Supported Brokers
+
+IBKR, Schwab, Alpaca, Tradier, Tastytrade, TradeStation, E\*TRADE, OANDA, Binance, Bybit, OKX, Coinbase, Kraken, Deribit, KuCoin, Gate.io, Gemini, Bitfinex, Hyperliquid, dYdX, Drift, Aster, Polymarket, Kalshi
+
+### Payment
+
+Deposit OSR, SOL, USDC, USDT, or PYUSD for compute credits. No free tier. Every API call costs credits. Presale buyers get a permanent 20% discount on all platform operations.
+
 ### OSR Token
 
-OSR is the compute credit token for the platform, built on Solana. Burn and Mint Equilibrium model. 1B supply, mint revoked, freeze revoked. Presale buyers receive a permanent 20% discount on all platform operations.
+OSR is the compute credit token for the platform. Burn and Mint Equilibrium model on Solana. Every platform operation burns tokens, so supply decreases as usage grows. 1B total supply, mint authority revoked, freeze authority revoked.
 
-Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)
+Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) | [osrprotocol.com](https://osrprotocol.com)
 
 ### Team
 
@@ -37,4 +79,4 @@ Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token
 
 ### Links
 
-[systemr.ai](https://www.systemr.ai) | [agents.systemr.ai](https://agents.systemr.ai) | [osrprotocol.com](https://osrprotocol.com) | [SDK](https://github.com/System-R-AI/systemr-python) | [PyPI](https://pypi.org/project/systemr/)
+[agents.systemr.ai](https://agents.systemr.ai) | [systemr.ai](https://www.systemr.ai) | [osrprotocol.com](https://osrprotocol.com) | [PyPI](https://pypi.org/project/systemr/) | [X: @OsrProtocol](https://x.com/OsrProtocol)
