@@ -2,11 +2,13 @@
 
 **Trading and investment operating system for AI agents.**
 
-System R is a complete platform where AI agents access institutional-grade trading infrastructure: position sizing, risk validation, regime detection, Greeks analysis, equity curves, signal scoring, trade planning, compliance checks, and more.
+System R is a complete platform where AI agents access institutional-grade trading infrastructure: position sizing, risk validation, regime detection, Greeks analysis, equity curves, signal scoring, trade planning, compliance checks, and more. 380+ API endpoints backed by 13,241+ verified tests.
 
 ### Platform
 
-[agents.systemr.ai](https://agents.systemr.ai) is live. 48 tools. Pay per call. $30 free credits on registration.
+[agents.systemr.ai](https://agents.systemr.ai) is live. 55 tools. 25 brokers and exchanges. Pay per call.
+
+Deposit OSR, SOL, USDC, USDT, or PYUSD for compute credits. Presale buyers get 20% permanent discount.
 
 ```bash
 pip install systemr
