@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050508"/>
+      <stop offset="100%" stop-color="#0A0F12"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3ECF8E" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3ECF8E" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="brokerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="520" rx="12" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="500" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#888" letter-spacing="3">HOW SYSTEM R WORKS</text>
+
+  <!-- === TOP: YOUR AI AGENT === -->
+  <rect x="300" y="58" width="400" height="64" rx="10" fill="url(#agentGrad)" stroke="#6366F1" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="500" y="84" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#A5B4FC">YOUR AI AGENT</text>
+  <text x="500" y="108" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#6366F1" fill-opacity="0.8">Claude  ·  GPT  ·  Llama  ·  Mistral  ·  Custom</text>
+
+  <!-- Arrow down -->
+  <line x1="500" y1="122" x2="500" y2="152" stroke="#3ECF8E" stroke-opacity="0.5" stroke-width="1.5"/>
+  <polygon points="494,148 500,158 506,148" fill="#3ECF8E" fill-opacity="0.5"/>
+  <text x="530" y="143" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">MCP / REST</text>
+
+  <!-- === MIDDLE: SYSTEM R (6 Layers) === -->
+  <rect x="60" y="160" width="880" height="230" rx="12" fill="url(#greenGrad)" stroke="#3ECF8E" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="500" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#3ECF8E" letter-spacing="2">SYSTEM R</text>
+
+  <!-- Row 1: Risk, Intelligence, Analysis -->
+  <rect x="90" y="208" width="250" height="68" rx="8" fill="#111118" stroke="#3ECF8E" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="215" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F0F0F0">Risk</text>
+  <text x="215" y="252" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#888">G-formula · Iron Fist · Kill switches</text>
+  <text x="215" y="268" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">12 tools</text>
+
+  <rect x="375" y="208" width="250" height="68" rx="8" fill="#111118" stroke="#3ECF8E" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="500" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F0F0F0">Intelligence</text>
+  <text x="500" y="252" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#888">Regime · Patterns · Breaks · Greeks</text>
+  <text x="500" y="268" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">11 tools</text>
+
+  <rect x="660" y="208" width="250" height="68" rx="8" fill="#111118" stroke="#3ECF8E" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="785" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F0F0F0">Analysis</text>
+  <text x="785" y="252" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#888">Monte Carlo · Kelly · Drawdown · Score</text>
+  <text x="785" y="268" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">18 tools</text>
+
+  <!-- Row 2: Planning, Execution, Memory -->
+  <rect x="90" y="292" width="250" height="68" rx="8" fill="#111118" stroke="#3ECF8E" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="215" y="316" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F0F0F0">Planning</text>
+  <text x="215" y="336" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#888">Options · Futures · Multi-leg · Spreads</text>
+  <text x="215" y="352" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">4 tools</text>
+
+  <rect x="375" y="292" width="250" height="68" rx="8" fill="#111118" stroke="#3ECF8E" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="500" y="316" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F0F0F0">Execution</text>
+  <text x="500" y="336" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#888">Equities · Options · Futures · Crypto · FX</text>
+  <text x="500" y="352" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">25 brokers</text>
+
+  <rect x="660" y="292" width="250" height="68" rx="8" fill="#111118" stroke="#3ECF8E" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="785" y="316" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#F0F0F0">Memory</text>
+  <text x="785" y="336" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#888">Fingerprint · Biases · Predict · Journal</text>
+  <text x="785" y="352" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.7">8 tools</text>
+
+  <!-- Security bar -->
+  <rect x="90" y="372" width="820" height="6" rx="3" fill="#3ECF8E" fill-opacity="0.12"/>
+  <text x="500" y="378" text-anchor="middle" font-family="ui-monospace, monospace" font-size="0" fill="transparent">security</text>
+
+  <!-- Arrow down -->
+  <line x1="500" y1="390" x2="500" y2="418" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="1.5"/>
+  <polygon points="494,414 500,424 506,414" fill="#F59E0B" fill-opacity="0.5"/>
+  <text x="530" y="410" font-family="ui-monospace, monospace" font-size="10" fill="#F59E0B" fill-opacity="0.7">adapters</text>
+
+  <!-- === BOTTOM: MARKETS === -->
+  <rect x="120" y="428" width="760" height="64" rx="10" fill="url(#brokerGrad)" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="500" y="454" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FCD34D">25 BROKERS &amp; EXCHANGES</text>
+  <text x="500" y="478" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#F59E0B" fill-opacity="0.8">Equities  ·  Options  ·  Futures  ·  Crypto  ·  DeFi  ·  Forex  ·  Prediction Markets</text>
+
+  <!-- Side labels -->
+  <text x="30" y="300" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.4" transform="rotate(-90 30 300)">ENCRYPTED · AUDITED · COMPLIANT</text>
+  <text x="970" y="300" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#3ECF8E" fill-opacity="0.4" transform="rotate(90 970 300)">PER-AGENT ISOLATION · ZERO TRUST</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="516" width="1000" height="4" rx="0 0 12 12" fill="#3ECF8E" fill-opacity="0.4"/>
+</svg>
