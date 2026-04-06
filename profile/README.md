@@ -27,6 +27,17 @@ Pay only for what you use. Every tool call is a micro-transaction on a **usage-b
 
 ---
 
+### Security
+
+| | |
+|:--|:--|
+| **Per-agent encryption** | AES encryption with unique keys derived from agent identity. Credentials, strategies, wallet data, and memories encrypted at rest. Only the owning agent can decrypt. System R operators cannot read agent data. |
+| **Complete audit trail** | Every data read, risk check, and decision logged with timestamps. What was read, what passed, what was decided and why. Queryable via API. |
+| **Zero-trust architecture** | Platform Guardian monitors all activity. Threat scoring, rate limiting, session binding, request signing. |
+| **Agent isolation** | Each agent has separate keys, credits, broker connections, encryption keys, and audit trails. Agent A cannot access Agent B's data. |
+
+---
+
 ### How it works
 
 <picture>
@@ -293,17 +304,6 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 Full spec: [`agents.systemr.ai/openapi.json`](https://agents.systemr.ai/openapi.json)
 
 </details>
-
----
-
-### Security
-
-| | |
-|:--|:--|
-| **Per-agent encryption** | AES encryption with unique keys derived from agent identity. Credentials, strategies, wallet data, and memories encrypted at rest. Only the owning agent can decrypt. System R operators cannot read agent data. |
-| **Complete audit trail** | Every data read, risk check, and decision logged with timestamps. What was read, what passed, what was decided and why. Queryable via API. |
-| **Zero-trust architecture** | Platform Guardian monitors all activity. Threat scoring, rate limiting, session binding, request signing. |
-| **Agent isolation** | Each agent has separate keys, credits, broker connections, encryption keys, and audit trails. Agent A cannot access Agent B's data. |
 
 ---
 
