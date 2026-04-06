@@ -63,10 +63,10 @@
   <!-- G-Formula -->
   <rect x="320" y="282" width="540" height="90" rx="8" fill="#111118" stroke="#222230" stroke-width="1"/>
 
-  <!-- Formula -->
-  <text x="590" y="322" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="28" font-weight="400" fill="#F0F0F0" font-style="italic">G = E[R] - σ² / 2</text>
+  <!-- Formula left-aligned under SYSTEM R -->
+  <text x="340" y="322" font-family="'Georgia', 'Times New Roman', serif" font-size="28" font-weight="400" fill="#F0F0F0" font-style="italic">G = E[R] - σ² / 2</text>
 
-  <text x="590" y="352" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="12" fill="#5C6370">Maximize expected return. Minimize variance drag. Compound geometrically.</text>
+  <text x="340" y="352" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="12" fill="#5C6370">Maximize expected return. Minimize variance drag. Compound geometrically.</text>
 
   <!-- Accent line bottom -->
   <rect x="0" y="396" width="1200" height="4" fill="#3ECF8E" fill-opacity="0.6"/>
