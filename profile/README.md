@@ -19,16 +19,11 @@ Research. Planning. Execution. Trade management. Journaling. Data analysis. Feed
 
 55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
 
-System R gives you full control over how LLMs are used. Choose a single model, select multiple models and let System R's routing protocol     
-assign each task to the best-qualified model automatically, or use System R's own curated protocol where model selection is fully optimized   
-for trading and investment workflows. 9 models available today including Claude, GPT, DeepSeek, and Llama.                                    
-                                                                                                                                                
-Prefer your own provider? Bring your own Anthropic, OpenAI, or any other LLM API key and pay your provider directly with zero LLM markup from 
-System R.
-                                                                                                                                                
-The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is 
-the specialized domain expertise built through its creators' lived experience in trading and investment. Intelligence is just a layer on top
-of it, whether it comes from in-house offerings or external providers.     
+System R gives you full control over how LLMs are used. Choose a single model, select multiple models and let System R's routing protocol assign each task to the best-qualified model automatically, or use System R's own curated protocol where model selection is fully optimized for trading and investment workflows. 9 models available today including Claude, GPT, DeepSeek, and Llama.
+
+Prefer your own provider? Bring your own Anthropic, OpenAI, or any other LLM API key and pay your provider directly with zero LLM markup from System R.
+
+The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain expertise built through its creators' lived experience in trading and investment. Intelligence is just a layer on top of it, whether it comes from in-house offerings or external providers.
 
 **Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
 
@@ -59,6 +54,42 @@ Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
 
 ---
 
+### Try it
+
+```bash
+pip install systemr
+```
+
+```python
+from systemr import SystemRClient
+
+client = SystemRClient(api_key="sr_agent_...")
+
+# One call: position sizing + risk validation + system health
+gate = client.pre_trade_gate(
+    symbol="AAPL",
+    direction="long",
+    entry_price="185.50",
+    stop_price="180.00",
+    equity="100000",
+)
+
+gate["gate_passed"]       # True
+gate["sizing"]["shares"]  # 363
+gate["risk"]["score"]     # 23
+```
+
+Or use the REST API directly:
+
+```bash
+curl -X POST https://agents.systemr.ai/v1/tools/call \
+  -H "X-API-Key: sr_agent_..." \
+  -H "Content-Type: application/json" \
+  -d '{"tool": "pre_trade_gate", "params": {"symbol": "AAPL", "direction": "long", "entry_price": "185.50", "stop_price": "180.00", "equity": "100000"}}'
+```
+
+---
+
 ### 55 tools, six layers
 
 <details>
@@ -71,14 +102,14 @@ Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
 | `check_trade_risk` | Iron Fist risk validation (position + portfolio + daily limits) | $0.004 |
 | `evaluate_performance` | G-metric analysis (score, grade, rolling trend) | $0.10 - $1.00 |
 | `analyze_drawdown` | Drawdown periods, depth, recovery time | $0.005 |
-| `run_monte_carlo` | 1,000–10,000 simulated equity paths | $0.008 |
+| `run_monte_carlo` | 1,000-10,000 simulated equity paths | $0.008 |
 | `calculate_kelly` | Kelly criterion (full, half, quarter) | $0.004 |
 | `find_variance_killers` | Trades that damage geometric growth | $0.006 |
 | `analyze_win_loss` | Win/loss statistics and streaks | $0.004 |
 | `run_what_if` | G-improvement scenarios | $0.008 |
 | `analyze_confidence` | Confidence intervals on R-multiples | $0.005 |
 | `analyze_risk_adjusted` | Sharpe, Sortino, Calmar ratios | $0.005 |
-| `calculate_system_r_score` | Composite score 0–100, grade A+ through F | $0.005 |
+| `calculate_system_r_score` | Composite score 0-100, grade A+ through F | $0.005 |
 
 </details>
 
@@ -240,138 +271,6 @@ Pass your API key in session metadata. All 55 tools auto-discovered by the clien
 
 </details>
 
-<details>
-<summary><strong>Python SDK</strong></summary>
-<br>
-
-```bash
-pip install systemr
-```
-
-```python
-from systemr import SystemRClient
-client = SystemRClient(api_key="sr_agent_...")
-```
-
-Single dependency (httpx). Python 3.9+.
-
-</details>
-
-<details>
-<summary><strong>REST API</strong></summary>
-<br>
-
-Base URL: `https://agents.systemr.ai`
-
-```bash
-curl -X POST https://agents.systemr.ai/v1/tools/call \
-  -H "X-API-Key: sr_agent_..." \
-  -H "Content-Type: application/json" \
-  -d '{"tool": "calculate_position_size", "params": {...}}'
-```
-
-Full spec: [`agents.systemr.ai/openapi.json`](https://agents.systemr.ai/openapi.json)
-
-</details>
-
----
-
-### Try it
-
-```bash
-pip install systemr
-```
-
-```python
-from systemr import SystemRClient
-
-client = SystemRClient(api_key="sr_agent_...")
-
-# One call: position sizing + risk validation + system health
-gate = client.pre_trade_gate(
-    symbol="AAPL",
-    direction="long",
-    entry_price="185.50",
-    stop_price="180.00",
-    equity="100000",
-)
-
-gate["gate_passed"]       # True
-gate["sizing"]["shares"]  # 363
-gate["risk"]["score"]     # 23
-```
-
-Or use the REST API directly:
-
-```bash
-curl -X POST https://agents.systemr.ai/v1/tools/call \
-  -H "X-API-Key: sr_agent_..." \
-  -H "Content-Type: application/json" \
-  -d '{"tool": "pre_trade_gate", "params": {"symbol": "AAPL", "direction": "long", "entry_price": "185.50", "stop_price": "180.00", "equity": "100000"}}'
-```
-
----
-
-### Pricing
-
-**Usage-based. No subscriptions. No monthly fees.** $5 free credits on signup. Credits never expire. Balance stops at $0, no surprise charges.
-
-#### Tool calls
-
-| Category | Price range | Examples |
-|:---------|:-----------|:---------|
-| **Core** | $0.003 – $1.00 | Position sizing ($0.003), risk validation ($0.004), performance eval ($0.10–$1.00) |
-| **Analysis** | $0.004 – $0.008 | Monte Carlo ($0.008), Kelly criterion ($0.004), drawdown ($0.005) |
-| **Intelligence** | $0.004 – $0.008 | Pattern detection ($0.008), regime detection ($0.006), Greeks ($0.006) |
-| **Planning** | $0.004 – $0.008 | Options sizing ($0.004), full options plan ($0.008) |
-| **Memory & ML** | $0.003 – $0.008 | Store/search memory ($0.003), bias detection ($0.005), trajectory ($0.008) |
-| **Compound** | $0.01 – $2.00 | Pre-trade gate ($0.01), full system assessment ($2.00) |
-| **Execution** | $0.015 | Broker order |
-
-#### LLM models (per 1M tokens)
-
-Use System R's hosted models, or bring your own key.
-
-| Model | Input | Output |
-|:------|:------|:-------|
-| GPT-4o Mini | $0.15 | $0.60 |
-| Llama 4 Maverick | $0.50 | $0.77 |
-| GPT-5.4 Mini | $0.50 | $2.00 |
-| o4 Mini | $1.10 | $4.40 |
-| DeepSeek R1 | $0.55 | $2.19 |
-| GPT-4o | $2.50 | $10.00 |
-| GPT-5.3 | $5.00 | $15.00 |
-| Claude Sonnet 4.6 | $9.00 | $45.00 |
-| Claude Opus 4.6 | $45.00 | $225.00 |
-
-**BYOK** (Bring Your Own Key): Connect your own Anthropic or OpenAI API key. LLM usage billed directly by the provider. System R charges only for tool calls.
-
-#### Real-world cost examples
-
-| Workflow | Cost |
-|:---------|:-----|
-| Single pre-trade gate | $0.01 |
-| Position size + risk check | $0.007 |
-| Backtest diagnostic (6 tools) | ~$0.032 |
-| Chat session (Sonnet, ~2K tokens) | ~$0.10 |
-| Chat session (Opus, ~2K tokens) | ~$0.50 |
-| 100 pre-trade gates / day | $1.00 |
-| 1,000 position sizing calls | $3.00 |
-| Full system assessment (7 tools) | $2.00 |
-
-#### Payment methods
-
-| Method | Rate | Min / Max |
-|:-------|:-----|:----------|
-| Card (Stripe) | 1:1 USD | $5 – $10,000 |
-| USDC / USDT / PYUSD | 1:1 USD | Solana mainnet |
-| SOL | Live market rate (CoinGecko) | Solana mainnet |
-| [OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) | Market price + **50% bonus** | 70% burned, 30% retained |
-
-**OSR presale buyers** receive a **permanent 20% discount** on all platform operations. Stacks with the 50% credit bonus.
-
-Full pricing details: **[docs.systemr.ai/billing/pricing](https://docs.systemr.ai/billing/pricing)**
-
 ---
 
 ### Get started
@@ -392,22 +291,12 @@ You receive an API key (`sr_agent_...`). Shown once. $5 free credits loaded.
 pip install systemr
 ```
 
-**3. Make your first call**
+**3. Connect a broker** (when ready)
 
 ```python
 from systemr import SystemRClient
 
 client = SystemRClient(api_key="sr_agent_...")
-gate = client.pre_trade_gate(
-    symbol="AAPL", direction="long",
-    entry_price="185.50", stop_price="180.00",
-    equity="100000",
-)
-```
-
-**4. Connect a broker** (when ready)
-
-```python
 client.connect_broker("alpaca", {
     "api_key": "...",
     "api_secret": "...",
@@ -419,16 +308,47 @@ Full walkthrough: [docs.systemr.ai/getting-started/quickstart](https://docs.syst
 
 ---
 
-### OSR Token
+### Pricing
 
-OSR is the compute credit token for the System R platform, built on Solana.
+#### LLM models (per 1M tokens)
 
-- Burn and Mint Equilibrium: 70% of OSR payments burned, 30% retained
-- 1B fixed supply. Mint authority revoked. Freeze authority revoked.
-- Presale buyers receive a **permanent 20% discount** on all platform operations
-- Pay with OSR for a **50% credit bonus**
+| Model | Input | Output |
+|:------|:------|:-------|
+| GPT-4o Mini | $0.15 | $0.60 |
+| Llama 4 Maverick | $0.50 | $0.77 |
+| GPT-5.4 Mini | $0.50 | $2.00 |
+| o4 Mini | $1.10 | $4.40 |
+| DeepSeek R1 | $0.55 | $2.19 |
+| GPT-4o | $2.50 | $10.00 |
+| GPT-5.3 | $5.00 | $15.00 |
+| Claude Sonnet 4.6 | $9.00 | $45.00 |
+| Claude Opus 4.6 | $45.00 | $225.00 |
 
-Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) &nbsp;&middot;&nbsp; [osrprotocol.com](https://osrprotocol.com)
+**BYOK** (Bring Your Own Key): Connect your own API key. LLM usage billed directly by the provider. System R charges only for tool calls.
+
+#### Real-world cost examples
+
+| Workflow | Cost |
+|:---------|:-----|
+| Single pre-trade gate | $0.01 |
+| Position size + risk check | $0.007 |
+| Backtest diagnostic (6 tools) | ~$0.032 |
+| Chat session (Sonnet, ~2K tokens) | ~$0.10 |
+| 100 pre-trade gates / day | $1.00 |
+| Full system assessment (7 tools) | $2.00 |
+
+#### Payment methods
+
+| Method | Rate |
+|:-------|:-----|
+| Card (Stripe) | 1:1 USD |
+| USDC / USDT / PYUSD | 1:1 USD (Solana) |
+| SOL | Live market rate |
+| [OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) | Market price + **50% bonus** |
+
+**OSR presale buyers** receive a **permanent 20% discount** on all platform operations. Stacks with the 50% credit bonus.
+
+Full pricing details: **[docs.systemr.ai/billing/pricing](https://docs.systemr.ai/billing/pricing)**
 
 ---
 
@@ -442,6 +362,10 @@ Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token
 | [`systemr-cli`](https://github.com/System-R-AI/systemr-cli) | Terminal client for System R |
 
 ---
+
+<p align="center">
+  <strong>OSR Token</strong>: <a href="https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc"><code>E2grvu8...vK5H</code></a> &nbsp;&middot;&nbsp; <a href="https://osrprotocol.com">osrprotocol.com</a>
+</p>
 
 <p align="center">
   <a href="https://www.systemr.ai">systemr.ai</a> &nbsp;&middot;&nbsp;
