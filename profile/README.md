@@ -7,7 +7,7 @@
   <a href="https://docs.systemr.ai">Documentation</a> &nbsp;&middot;&nbsp;
   <a href="https://app.systemr.ai">Web App</a> &nbsp;&middot;&nbsp;
   <a href="https://pypi.org/project/systemr/">Python SDK</a> &nbsp;&middot;&nbsp;
-  <a href="https://agents.systemr.ai/openapi.json">OpenAPI Spec</a> &nbsp;&middot;&nbsp;
+  <a href="https://agents.systemr.ai/docs">API Reference</a> &nbsp;&middot;&nbsp;
   <a href="https://docs.systemr.ai/billing/pricing">Pricing</a>
 </p>
 
