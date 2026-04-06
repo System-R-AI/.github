@@ -21,17 +21,17 @@
   <!-- Connection methods -->
   <text x="160" y="348" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#888">Connect via</text>
 
-  <rect x="72" y="368" width="58" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
-  <text x="101" y="385" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">MCP</text>
+  <rect x="62" y="368" width="56" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
+  <text x="90" y="385" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">MCP</text>
 
-  <rect x="138" y="368" width="58" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
-  <text x="167" y="385" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">SDK</text>
+  <rect x="152" y="368" width="56" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
+  <text x="180" y="385" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">SDK</text>
 
-  <rect x="72" y="402" width="58" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
-  <text x="101" y="419" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">REST</text>
+  <rect x="62" y="404" width="56" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
+  <text x="90" y="421" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">REST</text>
 
-  <rect x="138" y="402" width="58" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
-  <text x="167" y="419" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">x402</text>
+  <rect x="152" y="404" width="56" height="26" rx="5" fill="#1A1A18" stroke="#555" stroke-width="0.5"/>
+  <text x="180" y="421" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#AAA">x402</text>
 
   <!-- Arrow: Agent → System R -->
   <line x1="250" y1="260" x2="370" y2="260" stroke="#3ECF8E" stroke-opacity="0.6" stroke-width="1.5" marker-end="url(#arrow)"/>
@@ -116,8 +116,8 @@
   <text x="1010" y="474" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#EF9F27" fill-opacity="0.7">Markets, Events</text>
 
   <!-- ==================== RETURN PATH (dashed) ==================== -->
-  <!-- Routes from System R bottom, left past all connection blocks, then up to agent -->
-  <path d="M380 488 L48 488 L48 310" fill="none" stroke="#3ECF8E" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#arrow-dash)"/>
-  <text x="214" y="504" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#3ECF8E" fill-opacity="0.6">Results + memory</text>
+  <!-- Routes from System R bottom, through the channel between the 4 connection blocks, up to agent -->
+  <path d="M380 488 L135 488 L135 310" fill="none" stroke="#3ECF8E" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#arrow-dash)"/>
+  <text x="260" y="504" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#3ECF8E" fill-opacity="0.6">Results + memory</text>
 
 </svg>
