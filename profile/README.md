@@ -23,7 +23,7 @@ System R gives you full control over how LLMs are used. Choose a single model, s
 
 Prefer your own provider? Bring your own Anthropic, OpenAI, or any other LLM API key and pay your provider directly with zero LLM markup from System R.
 
-The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain expertise built through its creators' lived experience in trading and investment. Intelligence is just a layer on top of it, whether it comes from in-house offerings or external providers.
+The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain layer, anchored in the G-formula: **G = E[R] - σ²/2**, where geometric growth is maximized by increasing expected return while minimizing variance drag. Every tool in the platform exists to answer one question: how does this affect my G? Intelligence is just a layer on top of it, whether it comes from in-house offerings or external providers.
 
 **Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
 

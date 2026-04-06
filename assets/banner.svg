@@ -38,7 +38,7 @@
   </g>
 
   <!-- Title -->
-  <text x="320" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#F0F0F0" letter-spacing="2">System R</text>
+  <text x="320" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#F0F0F0" letter-spacing="6">SYSTEM R</text>
 
   <!-- Subtitle -->
   <text x="320" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#888888" letter-spacing="1">The trading operating system for humans and agents</text>
@@ -60,17 +60,13 @@
   <rect x="745" y="230" width="110" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
   <text x="800" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">One API Call</text>
 
-  <!-- Code snippet preview -->
+  <!-- G-Formula -->
   <rect x="320" y="282" width="540" height="90" rx="8" fill="#111118" stroke="#222230" stroke-width="1"/>
 
-  <!-- Code text -->
-  <text x="338" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">gate = client.</text>
-  <text x="445" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#3ECF8E">pre_trade_gate</text>
-  <text x="585" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">(symbol=</text>
-  <text x="653" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#E5C07B">"AAPL"</text>
-  <text x="703" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">, ...)</text>
+  <!-- Formula -->
+  <text x="590" y="322" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="28" font-weight="400" fill="#3ECF8E" font-style="italic">G = E[R] - σ² / 2</text>
 
-  <text x="338" y="348" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#5C6370"># → APPROVED: 160 shares, risk $800, G-Score: 1.12</text>
+  <text x="590" y="352" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="12" fill="#5C6370">Maximize expected return. Minimize variance drag. Compound geometrically.</text>
 
   <!-- Accent line bottom -->
   <rect x="0" y="396" width="1200" height="4" fill="#3ECF8E" fill-opacity="0.6"/>
