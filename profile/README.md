@@ -1,27 +1,35 @@
-## System R AI
+<p align="center">
+  <a href="https://systemr.ai">
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/systemr-logo-dark.svg" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/systemr-logo-light.svg" />
+      <img alt="System R AI" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/systemr-logo-light.svg" width="260" />
+    </picture>
+  </a>
+</p>
 
-Build AI trading agents with institutional-grade infrastructure.
+<h3 align="center">The trading operating system for humans and agents</h3>
 
-### The Platform
+<p align="center">
+  <a href="https://systemr.ai">Website</a> ·
+  <a href="https://docs.systemr.ai">Docs</a> ·
+  <a href="https://app.systemr.ai">Platform</a> ·
+  <a href="https://agents.systemr.ai">Agents API</a> ·
+  <a href="https://x.com/Systemrai">X</a>
+</p>
 
-System R is a complete trading operating system for AI agents. 55 MCP tools deliver risk management, position sizing, compliance validation, execution routing, portfolio analytics, and real-time intelligence. Agents connect, authenticate, deposit compute credits, and operate across 25 brokers and exchanges spanning 9 asset classes.
+<p align="center">
+  <a href="https://pypi.org/project/systemr/"><img src="https://img.shields.io/pypi/v/systemr?style=for-the-badge&color=3ECF8E&label=SDK" alt="PyPI" /></a>
+  <a href="https://github.com/System-R-AI/systemr-python/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" alt="License" /></a>
+</p>
 
-18 statistical analysis tools cover regime detection, volatility modeling, Greeks analysis, equity curves, signal scoring, correlation matrices, and drawdown analysis. 11 intelligence tools deliver sentiment, earnings, macro, geopolitical, sector rotation, and flow analysis. Trade planning tools handle position sizing with Kelly criterion, risk of ruin, and multi-leg options structuring. Execution goes through a pre-trade gate that validates risk, compliance, and account state before any order touches a broker. Memory, ML pipelines, and journaling round out the system. 380+ API endpoints, all backed by 13,241+ verified tests.
+---
 
-### By the Numbers
+System R is a complete trading operating system. 55 MCP tools deliver position sizing, risk validation, regime detection, Monte Carlo simulation, behavioral analytics, and execution across 25 brokers — from one API.
 
-| Metric | Value |
-|---|---|
-| **MCP Tools** | 55 |
-| **Brokers and Exchanges** | 25 |
-| **API Endpoints** | 380+ |
-| **Verified Tests** | 13,241+ |
-| **Asset Classes** | 9 (equities, options, futures, forex, crypto, commodities, energy, fixed income, prediction markets) |
-| **Payment Methods** | 5 (OSR, SOL, USDC, USDT, PYUSD) |
+Agents call `pre_trade_gate` before every trade. One endpoint checks position sizing (G-formula), risk limits (Iron Fist), market regime, and system health. Returns approved or blocked with the exact number of shares to buy. $0.01 per call.
 
-### Get Started
-
-```bash
+```python
 pip install systemr
 ```
 
@@ -29,6 +37,8 @@ pip install systemr
 from systemr import SystemRClient
 
 client = SystemRClient(api_key="sr_agent_...")
+
+# One call before every trade
 gate = client.pre_trade_gate(
     symbol="AAPL", direction="long",
     entry_price="185.50", stop_price="180.00",
@@ -37,40 +47,70 @@ gate = client.pre_trade_gate(
 
 if gate["gate_passed"]:
     print(f"Buy {gate['sizing']['shares']} shares")
+    # → Buy 160 shares, risk $800 (1.6%), G-Score: 1.12
 ```
 
-### Tool Categories
+### Same API. Every asset class.
 
-| Category | Count | Examples |
-|---|---|---|
-| **Core** | 4 | Pre-trade gate, position sizing, performance evaluation, pricing |
-| **Analysis** | 18 | Monte Carlo, Kelly criterion, drawdown, equity curves, signal scoring |
-| **Intelligence** | 11 | Regime detection, patterns, volatility surface, Greeks, correlations |
-| **Planning** | 4 | Options sizing, futures sizing, trade plan builders |
-| **Data** | 3 | P&L calculation, expected value, compliance |
-| **System** | 5 | Signal scoring, margin, scanner evaluation |
-| **Compound** | 2 | Full analysis pipeline, system assessment |
-| **Memory and ML** | 7 | Persistent memory, behavioral analytics, ML prediction |
-| **Journal** | 1 | Trade journaling with tagging and review |
+```python
+client.pre_trade_gate(symbol="BTC-USDT", direction="long", ...)      # Crypto
+client.pre_trade_gate(symbol="EUR-USD", direction="short", ...)       # Forex
+client.calculate_options_size(symbol="SPY", strike="530", ...)        # Options
+client.calculate_futures_size(symbol="ES", direction="long", ...)     # Futures
+client.pre_trade_gate(symbol="TRUMP-WIN", direction="long", ...)     # Prediction Markets
+```
 
-### Supported Brokers
+### What we built
 
-IBKR, Schwab, Alpaca, Tradier, Tastytrade, TradeStation, E\*TRADE, OANDA, Binance, Bybit, OKX, Coinbase, Kraken, Deribit, KuCoin, Gate.io, Gemini, Bitfinex, Hyperliquid, dYdX, Drift, Aster, Polymarket, Kalshi
+```
+55 MCP Tools        25 Brokers          9 LLM Models
+187 Domain Services Every Asset Class   Per-Agent Encryption
+13,500+ Tests       $0.003/call         MCP + REST + SDK
+```
 
-### Payment
+### Repositories
 
-Deposit OSR, SOL, USDC, USDT, or PYUSD for compute credits. Pay per call. Presale buyers receive a permanent 20% discount on all platform operations.
+| Repo | What it is |
+|------|-----------|
+| [**systemr-python**](https://github.com/System-R-AI/systemr-python) | Python SDK — `pip install systemr` — 55 tools, 25 brokers |
+| [**demo-trading-agent**](https://github.com/System-R-AI/demo-trading-agent) | Reference agent — momentum strategy with pre-trade risk gates |
 
-### OSR Token
+### How it works
 
-OSR is the compute credit token for the platform. Burn and Mint Equilibrium model on Solana. Every platform operation strengthens the token economy. 1 billion supply. Immutable. Mint authority permanently revoked. Freeze authority permanently revoked.
-
-Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) | [osrprotocol.com](https://osrprotocol.com)
-
-### Team
-
-**Ashim Nandi** (Founder) and **Shannon** (Co-Founder).
+```
+                    ┌─────────────────────────────────┐
+                    │         Your Agent / LLM         │
+                    └──────────────┬──────────────────┘
+                                   │
+                         SDK / MCP / REST API
+                                   │
+                    ┌──────────────▼──────────────────┐
+                    │          System R API            │
+                    │                                  │
+                    │  ┌──────────┐  ┌─────────────┐  │
+                    │  │ Position │  │    Risk      │  │
+                    │  │  Sizing  │  │ Validation   │  │
+                    │  └──────────┘  └─────────────┘  │
+                    │  ┌──────────┐  ┌─────────────┐  │
+                    │  │  Regime  │  │  Analysis    │  │
+                    │  │Detection │  │  (18 tools)  │  │
+                    │  └──────────┘  └─────────────┘  │
+                    │  ┌──────────┐  ┌─────────────┐  │
+                    │  │  Memory  │  │ Intelligence │  │
+                    │  │  & ML    │  │ (11 tools)   │  │
+                    │  └──────────┘  └─────────────┘  │
+                    └──────────────┬──────────────────┘
+                                   │
+              ┌────────────────────┼────────────────────┐
+              │                    │                    │
+        ┌─────▼─────┐      ┌─────▼──────┐      ┌─────▼─────┐
+        │Traditional │      │   Crypto    │      │   DeFi    │
+        │  IBKR      │      │  Binance    │      │Hyperliquid│
+        │  Schwab    │      │  Coinbase   │      │  dYdX     │
+        │  Alpaca    │      │  Kraken     │      │  Drift    │
+        └────────────┘      └────────────┘      └───────────┘
+```
 
 ### Links
 
-[agents.systemr.ai](https://agents.systemr.ai) | [systemr.ai](https://www.systemr.ai) | [osrprotocol.com](https://osrprotocol.com) | [PyPI](https://pypi.org/project/systemr/) | [X: @OsrProtocol](https://x.com/OsrProtocol)
+[systemr.ai](https://systemr.ai) · [docs.systemr.ai](https://docs.systemr.ai) · [app.systemr.ai](https://app.systemr.ai) · [agents.systemr.ai](https://agents.systemr.ai) · [sol.systemr.ai](https://sol.systemr.ai) · [PyPI](https://pypi.org/project/systemr/) · [@Systemrai](https://x.com/Systemrai) · [YouTube](https://youtube.com/@systemr_ai)

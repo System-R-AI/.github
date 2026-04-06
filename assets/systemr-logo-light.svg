@@ -1,0 +1,12 @@
+<svg viewBox="0 0 600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo mark -->
+  <g transform="translate(60 60)">
+    <ellipse rx="20" ry="52" stroke="#3ECF8E" stroke-opacity="0.55" stroke-width="6"/>
+    <ellipse rx="20" ry="52" stroke="#3ECF8E" stroke-opacity="0.55" stroke-width="6" transform="rotate(-60)"/>
+    <ellipse rx="20" ry="52" stroke="#3ECF8E" stroke-opacity="0.55" stroke-width="6" transform="rotate(60)"/>
+    <circle r="13" fill="#3ECF8E"/>
+  </g>
+  <!-- Text -->
+  <text x="120" y="52" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#F0F0F0" letter-spacing="2">SYSTEM R</text>
+  <text x="120" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#3ECF8E" letter-spacing="4">AI</text>
+</svg>

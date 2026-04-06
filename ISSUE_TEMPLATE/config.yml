@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://docs.systemr.ai
+    about: Check the docs before filing an issue.
+  - name: API Reference
+    url: https://docs.systemr.ai/getting-started/quickstart
+    about: Quickstart guide and API reference.
+  - name: Support
+    url: https://systemr.ai
+    about: General questions and support.
