@@ -53,6 +53,15 @@ Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
 
 ---
 
+### How it works
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture-dark.svg">
+  <img src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture-light.svg" alt="System R Architecture" width="100%">
+</picture>
+
+---
+
 ### 55 tools, six layers
 
 <details>
@@ -267,22 +276,6 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 Full spec: [`agents.systemr.ai/openapi.json`](https://agents.systemr.ai/openapi.json)
 
 </details>
-
----
-
-### How it works
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg">
-  <img alt="System R Architecture — Agent to System R to Markets" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg" width="100%">
-</picture>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/trade-flow.svg">
-  <img alt="One API call — what happens inside" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/trade-flow.svg" width="100%">
-</picture>
 
 ---
 
