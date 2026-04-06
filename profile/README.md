@@ -13,11 +13,13 @@
 
 ---
 
-Your AI agent needs to size positions, validate risk, detect market regimes, analyze performance, execute across brokers, and remember what it learned. That's six different problems, dozens of APIs, months of infrastructure.
+**System R is the operating system for trading and investment** — for humans and AI agents.
 
-**System R is one API that does all of it.**
+Research. Planning. Execution. Trade management. Journaling. Data analysis. Feedback loop. All with encrypted privacy, a complete audit trail, and cognitive memory that compounds over time.
 
-55 tools across six layers. 25 brokers across every asset class. Per-agent encryption, complete audit trail, and compliance-ready logging. Every call costs fractions of a cent.
+55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade.
+
+Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**. Build on it via the **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**.
 
 ---
 
