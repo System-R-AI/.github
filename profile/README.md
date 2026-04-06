@@ -303,22 +303,63 @@ Full spec: [`agents.systemr.ai/openapi.json`](https://agents.systemr.ai/openapi.
 
 ### Pricing
 
-**Usage-based. No subscriptions. No monthly fees.** $5 free credits on signup. Credits never expire.
+**Usage-based. No subscriptions. No monthly fees.** $5 free credits on signup. Credits never expire. Balance stops at $0 — no surprise charges.
 
-| What you're doing | Cost |
-|:-------------------|:-----|
-| Pre-trade gate (sizing + risk + health) | $0.01 |
-| Position size calculation | $0.003 |
-| Risk validation | $0.004 |
-| Monte Carlo simulation (1,000 paths) | $0.008 |
-| Full system assessment (7 tools chained) | $2.00 |
-| Broker order | $0.015 |
-| 100 pre-trade gates per day | $1.00 |
+#### Tool calls
+
+| Category | Price range | Examples |
+|:---------|:-----------|:---------|
+| **Core** | $0.003 – $1.00 | Position sizing ($0.003), risk validation ($0.004), performance eval ($0.10–$1.00) |
+| **Analysis** | $0.004 – $0.008 | Monte Carlo ($0.008), Kelly criterion ($0.004), drawdown ($0.005) |
+| **Intelligence** | $0.004 – $0.008 | Pattern detection ($0.008), regime detection ($0.006), Greeks ($0.006) |
+| **Planning** | $0.004 – $0.008 | Options sizing ($0.004), full options plan ($0.008) |
+| **Memory & ML** | $0.003 – $0.008 | Store/search memory ($0.003), bias detection ($0.005), trajectory ($0.008) |
+| **Compound** | $0.01 – $2.00 | Pre-trade gate ($0.01), full system assessment ($2.00) |
+| **Execution** | $0.015 | Broker order |
+
+#### LLM models (per 1M tokens)
+
+Use System R's hosted models, or bring your own key.
+
+| Model | Input | Output |
+|:------|:------|:-------|
+| GPT-4o Mini | $0.15 | $0.60 |
+| Llama 4 Maverick | $0.50 | $0.77 |
+| GPT-5.4 Mini | $0.50 | $2.00 |
+| o4 Mini | $1.10 | $4.40 |
+| DeepSeek R1 | $0.55 | $2.19 |
+| GPT-4o | $2.50 | $10.00 |
+| GPT-5.3 | $5.00 | $15.00 |
+| Claude Sonnet 4.6 | $9.00 | $45.00 |
+| Claude Opus 4.6 | $45.00 | $225.00 |
+
+**BYOK** (Bring Your Own Key): Connect your own Anthropic or OpenAI API key. LLM usage billed directly by the provider — System R charges only for tool calls.
+
+#### Real-world cost examples
+
+| Workflow | Cost |
+|:---------|:-----|
+| Single pre-trade gate | $0.01 |
+| Position size + risk check | $0.007 |
+| Backtest diagnostic (6 tools) | ~$0.032 |
+| Chat session (Sonnet, ~2K tokens) | ~$0.10 |
+| Chat session (Opus, ~2K tokens) | ~$0.50 |
+| 100 pre-trade gates / day | $1.00 |
 | 1,000 position sizing calls | $3.00 |
+| Full system assessment (7 tools) | $2.00 |
 
-**BYOK**: Bring your own Anthropic or OpenAI key — no LLM charge, only tool calls billed.
+#### Payment methods
 
-**Payment**: Card (Stripe), USDC/USDT/PYUSD (Solana), SOL (market rate), or [OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) (50% bonus).
+| Method | Rate | Min / Max |
+|:-------|:-----|:----------|
+| Card (Stripe) | 1:1 USD | $5 – $10,000 |
+| USDC / USDT / PYUSD | 1:1 USD | Solana mainnet |
+| SOL | Live market rate (CoinGecko) | Solana mainnet |
+| [OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) | Market price + **50% bonus** | 70% burned, 30% retained |
+
+**OSR presale buyers** receive a **permanent 20% discount** on all platform operations — stacks with the 50% credit bonus.
+
+Full pricing details: **[docs.systemr.ai/billing/pricing](https://docs.systemr.ai/billing/pricing)**
 
 ---
 
