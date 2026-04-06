@@ -23,15 +23,9 @@ Research. Planning. Execution. Trade management. Journaling. Data analysis. Feed
 
 **AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
 
-**Fair, transparent pricing.** Every tool call, every LLM request, every broker order is a micro-transaction on a **usage-based compute
-credit** system. No subscriptions, no monthly fees, credits never expire. Fund your account with stripe payment, stablecoins (USDC/USDT/PYUSD), SOL, or
-the **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** for a 50% credit bonus.
+**Fair, transparent pricing.** Every tool call, every LLM request, every broker order is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire. Fund your account with stripe payment, stablecoins (USDC/USDT/PYUSD), SOL, or the **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** for a 50% credit bonus.
 
-                                                                                                                                           
-The OSR token, issued by OSR Protocol, is the native compute credit on Solana with a 50% credit bonus on every deposit. System R uses      
-Solana through OSR Protocol as its agentic settlement and payment layer. Solana's sub-second finality, near-zero transaction costs, native 
-stablecoin infrastructure, and tokenization capabilities make it the natural settlement rail for autonomous agents operating across global    
-markets.
+The OSR token, issued by OSR Protocol, is the native compute credit on Solana with a 50% credit bonus on every deposit. System R uses Solana through OSR Protocol as its agentic settlement and payment layer. Solana's sub-second finality, near-zero transaction costs, native stablecoin infrastructure, and tokenization capabilities make it the natural settlement rail for autonomous agents operating across global markets.
 
 Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
 
@@ -45,58 +39,6 @@ Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
 | **Complete audit trail** | Every data read, risk check, and decision logged with timestamps. What was read, what passed, what was decided and why. Queryable via API. |
 | **Zero-trust architecture** | Platform Guardian monitors all activity. Threat scoring, rate limiting, session binding, request signing. |
 | **Agent isolation** | Each agent has separate keys, credits, broker connections, encryption keys, and audit trails. Agent A cannot access Agent B's data. |
-
----
-
-### How it works
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg">
-  <img alt="System R Architecture — Agent to System R to Markets" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg" width="100%">
-</picture>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/trade-flow.svg">
-  <img alt="One API call — what happens inside" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/trade-flow.svg" width="100%">
-</picture>
-
----
-
-### Try it
-
-```bash
-pip install systemr
-```
-
-```python
-from systemr import SystemRClient
-
-client = SystemRClient(api_key="sr_agent_...")
-
-# One call: position sizing + risk validation + system health
-gate = client.pre_trade_gate(
-    symbol="AAPL",
-    direction="long",
-    entry_price="185.50",
-    stop_price="180.00",
-    equity="100000",
-)
-
-gate["gate_passed"]       # True
-gate["sizing"]["shares"]  # 363
-gate["risk"]["score"]     # 23
-```
-
-Or use the REST API directly:
-
-```bash
-curl -X POST https://agents.systemr.ai/v1/tools/call \
-  -H "X-API-Key: sr_agent_..." \
-  -H "Content-Type: application/json" \
-  -d '{"tool": "pre_trade_gate", "params": {"symbol": "AAPL", "direction": "long", "entry_price": "185.50", "stop_price": "180.00", "equity": "100000"}}'
-```
 
 ---
 
@@ -314,6 +256,58 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 Full spec: [`agents.systemr.ai/openapi.json`](https://agents.systemr.ai/openapi.json)
 
 </details>
+
+---
+
+### How it works
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg">
+  <img alt="System R Architecture — Agent to System R to Markets" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg" width="100%">
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/trade-flow.svg">
+  <img alt="One API call — what happens inside" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/trade-flow.svg" width="100%">
+</picture>
+
+---
+
+### Try it
+
+```bash
+pip install systemr
+```
+
+```python
+from systemr import SystemRClient
+
+client = SystemRClient(api_key="sr_agent_...")
+
+# One call: position sizing + risk validation + system health
+gate = client.pre_trade_gate(
+    symbol="AAPL",
+    direction="long",
+    entry_price="185.50",
+    stop_price="180.00",
+    equity="100000",
+)
+
+gate["gate_passed"]       # True
+gate["sizing"]["shares"]  # 363
+gate["risk"]["score"]     # 23
+```
+
+Or use the REST API directly:
+
+```bash
+curl -X POST https://agents.systemr.ai/v1/tools/call \
+  -H "X-API-Key: sr_agent_..." \
+  -H "Content-Type: application/json" \
+  -d '{"tool": "pre_trade_gate", "params": {"symbol": "AAPL", "direction": "long", "entry_price": "185.50", "stop_price": "180.00", "equity": "100000"}}'
+```
 
 ---
 
