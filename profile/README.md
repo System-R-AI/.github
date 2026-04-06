@@ -17,23 +17,82 @@
 
 Research. Planning. Execution. Trade management. Journaling. Data analysis. Feedback loop. All with encrypted privacy, a complete audit trail, and cognitive memory that compounds over time.
 
-55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
+---
 
-System R gives you full control over how LLMs are used. Choose a single model, select multiple models and let System R's routing protocol assign each task to the best-qualified model automatically, or use System R's own curated protocol where model selection is fully optimized for trading and investment workflows. 9 models available today including Claude, GPT, DeepSeek, and Llama.
+#### What's inside
 
-Prefer your own provider? Bring your own Anthropic, OpenAI, or any other LLM API key and pay your provider directly with zero LLM markup from System R.
+| | |
+|:--|:--|
+| **55 tools across six layers** | Risk, intelligence, analysis, planning, execution, and memory |
+| **25 brokers and exchanges** | Equities, options, futures, crypto, forex, and prediction markets |
+| **One platform** | Covers the full lifecycle of every trade |
+
+System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
+
+---
+
+#### LLM control
+
+System R gives you full control over how LLMs are used.
+
+| Mode | How it works |
+|:-----|:-------------|
+| **Single model** | You choose one model for all tasks |
+| **Multi-model routing** | You select multiple models, System R's routing protocol assigns each task to the best-qualified model automatically |
+| **System R protocol** | Fully optimized model selection for trading and investment workflows |
+| **Bring your own key** | Use your own Anthropic, OpenAI, or any other LLM API key. Pay your provider directly with zero LLM markup from System R |
+
+9 models available today including Claude, GPT, DeepSeek, and Llama.
 
 The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain expertise built through its creators' lived experience in trading and investment. Intelligence is just a layer on top of it, whether it comes from in-house offerings or external providers.
 
-**Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
+---
 
-**AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
+#### For humans
 
-**Fair, transparent pricing.** Every tool call, every LLM request, every broker order is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire. Fund your account with stripe payment, stablecoins (USDC/USDT/PYUSD), SOL, or the **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** for a 50% credit bonus.
+Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available.
 
-The OSR token, issued by OSR Protocol, is the native compute credit on Solana with a 50% credit bonus on every deposit. System R uses Solana through OSR Protocol as its agentic settlement and payment layer. Solana's sub-second finality, near-zero transaction costs, native stablecoin infrastructure, and tokenization capabilities make it the natural settlement rail for autonomous agents operating across global markets.
+| Surface | |
+|:--------|:--|
+| **[Web app](https://app.systemr.ai)** | Browser-based interface at app.systemr.ai |
+| **[Desktop CLI](https://github.com/System-R-AI/systemr-cli)** | Terminal client for power users |
+| **[Mobile app](https://github.com/System-R-AI/systemr-mobile)** | iOS and Android |
 
-Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
+---
+
+#### For AI agents
+
+No signup required. No account needed.
+
+| Method | |
+|:-------|:--|
+| **[MCP protocol](https://docs.systemr.ai/mcp/overview)** | Any MCP-compatible client discovers all 55 tools natively |
+| **[Python SDK](https://pypi.org/project/systemr/)** | `pip install systemr` |
+| **[REST API](https://agents.systemr.ai)** | `POST /v1/tools/call` with `X-API-Key` header |
+| **Solana wallet (x402)** | Pay per call on-chain, no account needed |
+
+---
+
+#### Fair, transparent pricing
+
+Every tool call, every LLM request, every broker order is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire.
+
+| Method | Rate |
+|:-------|:-----|
+| Card (Stripe) | 1:1 USD |
+| USDC / USDT / PYUSD | 1:1 USD (Solana) |
+| SOL | Live market rate |
+| **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** | **50% credit bonus** |
+
+---
+
+#### Solana settlement
+
+The OSR token, issued by **OSR Protocol**, is the native compute credit on Solana. System R uses Solana through OSR Protocol as its agentic settlement and payment layer.
+
+Solana's sub-second finality, near-zero transaction costs, native stablecoin infrastructure, and tokenization capabilities make it the natural settlement rail for autonomous agents operating across global markets.
+
+Explore Solana RWA intelligence at **[sol.systemr.ai](https://sol.systemr.ai)**.
 
 ---
 
