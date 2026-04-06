@@ -19,6 +19,17 @@ Research. Planning. Execution. Trade management. Journaling. Data analysis. Feed
 
 55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
 
+System R gives you full control over how LLMs are used. Choose a single model, select multiple models and let System R's routing protocol     
+assign each task to the best-qualified model automatically, or use System R's own curated protocol where model selection is fully optimized   
+for trading and investment workflows. 9 models available today including Claude, GPT, DeepSeek, and Llama.                                    
+                                                                                                                                                
+Prefer your own provider? Bring your own Anthropic, OpenAI, or any other LLM API key and pay your provider directly with zero LLM markup from 
+System R.
+                                                                                                                                                
+The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is 
+the specialized domain expertise built through its creators' lived experience in trading and investment. Intelligence is just a layer on top
+of it, whether it comes from in-house offerings or external providers.     
+
 **Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
 
 **AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
