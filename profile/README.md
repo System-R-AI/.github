@@ -13,17 +13,17 @@
 
 ---
 
-**System R is the operating system for trading and investment** — for humans and AI agents.
+**System R is the operating system for trading and investment**, for humans and AI agents.
 
 Research. Planning. Execution. Trade management. Journaling. Data analysis. Feedback loop. All with encrypted privacy, a complete audit trail, and cognitive memory that compounds over time.
 
-55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system — domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
+55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
 
 **Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
 
-**AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)** — or pay per call with a Solana wallet using x402, no account needed.
+**AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
 
-Pay only for what you use. Every tool call is a micro-transaction on a **usage-based compute credit** system — no subscriptions, no monthly fees, credits never expire. The **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** is the native compute credit on Solana — pay with OSR for a 50% credit bonus and connect DeFi liquidity directly into your trading infrastructure via [sol.systemr.ai](https://sol.systemr.ai).
+Pay only for what you use. Every tool call is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire. The **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** is the native compute credit on Solana with a 50% credit bonus on every deposit. System R also connects to Solana DeFi protocols including Hyperliquid, dYdX, and Drift for on-chain perpetuals and trading. Explore the Solana ecosystem at [sol.systemr.ai](https://sol.systemr.ai).
 
 ---
 
@@ -82,14 +82,14 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 ### 55 tools, six layers
 
 <details>
-<summary><strong>Risk</strong> — 12 tools &nbsp; <sub>Position sizing, validation, and controls</sub></summary>
+<summary><strong>Risk</strong> | 12 tools &nbsp; <sub>Position sizing, validation, and controls</sub></summary>
 <br>
 
 | Tool | What it does | Cost |
 |:-----|:-------------|:-----|
 | `calculate_position_size` | G-formula geometric growth optimization | $0.003 |
 | `check_trade_risk` | Iron Fist risk validation (position + portfolio + daily limits) | $0.004 |
-| `evaluate_performance` | G-metric analysis — score, grade, rolling trend | $0.10 — $1.00 |
+| `evaluate_performance` | G-metric analysis (score, grade, rolling trend) | $0.10 - $1.00 |
 | `analyze_drawdown` | Drawdown periods, depth, recovery time | $0.005 |
 | `run_monte_carlo` | 1,000–10,000 simulated equity paths | $0.008 |
 | `calculate_kelly` | Kelly criterion (full, half, quarter) | $0.004 |
@@ -103,7 +103,7 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 </details>
 
 <details>
-<summary><strong>Intelligence</strong> — 11 tools &nbsp; <sub>Market regime, patterns, and signals</sub></summary>
+<summary><strong>Intelligence</strong> | 11 tools &nbsp; <sub>Market regime, patterns, and signals</sub></summary>
 <br>
 
 | Tool | What it does | Cost |
@@ -114,16 +114,16 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 | `calculate_indicators` | SMA, EMA, RSI, MACD, Bollinger Bands, ATR | $0.004 |
 | `analyze_price_structure` | Support/resistance, swing points, consolidation zones | $0.006 |
 | `analyze_correlations` | Multi-symbol correlation matrix | $0.008 |
-| `analyze_liquidity` | Volume analysis — normal, thinning, stressed, spike | $0.004 |
+| `analyze_liquidity` | Volume analysis (normal, thinning, stressed, spike) | $0.004 |
 | `analyze_greeks` | Options Greeks portfolio exposure | $0.006 |
 | `analyze_iv_surface` | Implied volatility surface structure | $0.008 |
-| `analyze_futures_curve` | Term structure — contango, backwardation, flat | $0.006 |
+| `analyze_futures_curve` | Term structure (contango, backwardation, flat) | $0.006 |
 | `analyze_options_flow` | Options order flow directional signals | $0.006 |
 
 </details>
 
 <details>
-<summary><strong>Analysis</strong> — 18 tools &nbsp; <sub>Statistical analysis and diagnostics</sub></summary>
+<summary><strong>Analysis</strong> | 18 tools &nbsp; <sub>Statistical analysis and diagnostics</sub></summary>
 <br>
 
 | Tool | What it does | Cost |
@@ -150,7 +150,7 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 </details>
 
 <details>
-<summary><strong>Planning</strong> — 4 tools &nbsp; <sub>Options and futures position building</sub></summary>
+<summary><strong>Planning</strong> | 4 tools &nbsp; <sub>Options and futures position building</sub></summary>
 <br>
 
 | Tool | What it does | Cost |
@@ -163,7 +163,7 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 </details>
 
 <details>
-<summary><strong>Execution</strong> — 25 brokers &nbsp; <sub>Trade across every asset class</sub></summary>
+<summary><strong>Execution</strong> | 25 brokers &nbsp; <sub>Trade across every asset class</sub></summary>
 <br>
 
 | Category | Brokers |
@@ -180,7 +180,7 @@ All broker credentials encrypted per-agent. Decrypted only at moment of executio
 </details>
 
 <details>
-<summary><strong>Memory</strong> — 8 tools &nbsp; <sub>Learning, biases, and behavioral analysis</sub></summary>
+<summary><strong>Memory</strong> | 8 tools &nbsp; <sub>Learning, biases, and behavioral analysis</sub></summary>
 <br>
 
 | Tool | What it does | Cost |
@@ -309,7 +309,7 @@ Full spec: [`agents.systemr.ai/openapi.json`](https://agents.systemr.ai/openapi.
 
 ### Pricing
 
-**Usage-based. No subscriptions. No monthly fees.** $5 free credits on signup. Credits never expire. Balance stops at $0 — no surprise charges.
+**Usage-based. No subscriptions. No monthly fees.** $5 free credits on signup. Credits never expire. Balance stops at $0, no surprise charges.
 
 #### Tool calls
 
@@ -339,7 +339,7 @@ Use System R's hosted models, or bring your own key.
 | Claude Sonnet 4.6 | $9.00 | $45.00 |
 | Claude Opus 4.6 | $45.00 | $225.00 |
 
-**BYOK** (Bring Your Own Key): Connect your own Anthropic or OpenAI API key. LLM usage billed directly by the provider — System R charges only for tool calls.
+**BYOK** (Bring Your Own Key): Connect your own Anthropic or OpenAI API key. LLM usage billed directly by the provider. System R charges only for tool calls.
 
 #### Real-world cost examples
 
@@ -363,7 +363,7 @@ Use System R's hosted models, or bring your own key.
 | SOL | Live market rate (CoinGecko) | Solana mainnet |
 | [OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc) | Market price + **50% bonus** | 70% burned, 30% retained |
 
-**OSR presale buyers** receive a **permanent 20% discount** on all platform operations — stacks with the 50% credit bonus.
+**OSR presale buyers** receive a **permanent 20% discount** on all platform operations. Stacks with the 50% credit bonus.
 
 Full pricing details: **[docs.systemr.ai/billing/pricing](https://docs.systemr.ai/billing/pricing)**
 
@@ -431,9 +431,9 @@ Token: [`E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc`](https://solscan.io/token
 
 | Repo | What it is |
 |:-----|:-----------|
-| [`systemr-python`](https://github.com/System-R-AI/systemr-python) | Python SDK — `pip install systemr` |
+| [`systemr-python`](https://github.com/System-R-AI/systemr-python) | Python SDK (`pip install systemr`) |
 | [`demo-trading-agent`](https://github.com/System-R-AI/demo-trading-agent) | Reference agent showing System R integration |
-| [`sol-systemr`](https://github.com/System-R-AI/sol-systemr) | Solana RWA Intelligence Hub — [sol.systemr.ai](https://sol.systemr.ai) |
+| [`sol-systemr`](https://github.com/System-R-AI/sol-systemr) | Solana RWA Intelligence Hub ([sol.systemr.ai](https://sol.systemr.ai)) |
 | [`systemr-cli`](https://github.com/System-R-AI/systemr-cli) | Terminal client for System R |
 
 ---
