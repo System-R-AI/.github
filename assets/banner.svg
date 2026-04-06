@@ -63,19 +63,14 @@
   <!-- Code snippet preview -->
   <rect x="320" y="282" width="540" height="90" rx="8" fill="#111118" stroke="#222230" stroke-width="1"/>
 
-  <!-- Terminal dots -->
-  <circle cx="338" cy="298" r="5" fill="#FF5F56"/>
-  <circle cx="356" cy="298" r="5" fill="#FFBD2E"/>
-  <circle cx="374" cy="298" r="5" fill="#27C93F"/>
-
   <!-- Code text -->
-  <text x="338" y="330" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">gate = client.</text>
-  <text x="445" y="330" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#3ECF8E">pre_trade_gate</text>
-  <text x="585" y="330" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">(symbol=</text>
-  <text x="653" y="330" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#E5C07B">"AAPL"</text>
-  <text x="703" y="330" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">, ...)</text>
+  <text x="338" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">gate = client.</text>
+  <text x="445" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#3ECF8E">pre_trade_gate</text>
+  <text x="585" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">(symbol=</text>
+  <text x="653" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#E5C07B">"AAPL"</text>
+  <text x="703" y="318" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#888">, ...)</text>
 
-  <text x="338" y="355" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#5C6370"># → APPROVED: 160 shares, risk $800, G-Score: 1.12</text>
+  <text x="338" y="348" font-family="ui-monospace, SFMono-Regular, 'SF Mono', monospace" font-size="13" fill="#5C6370"># → APPROVED: 160 shares, risk $800, G-Score: 1.12</text>
 
   <!-- Accent line bottom -->
   <rect x="0" y="396" width="1200" height="4" fill="#3ECF8E" fill-opacity="0.6"/>
