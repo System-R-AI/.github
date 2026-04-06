@@ -23,7 +23,7 @@ Research. Planning. Execution. Trade management. Journaling. Data analysis. Feed
 
 **AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
 
-Pay only for what you use. Every tool call is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire. The **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** is the native compute credit on Solana with a 50% credit bonus on every deposit. System R also connects to Solana DeFi protocols including Hyperliquid, dYdX, and Drift for on-chain perpetuals and trading. Explore the Solana ecosystem at [sol.systemr.ai](https://sol.systemr.ai).
+Pay only for what you use. Every tool call is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire. The **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** is the native compute credit on Solana with a 50% credit bonus on every deposit. System R also connects to on-chain DeFi protocols including Hyperliquid, dYdX, and Drift for decentralized perpetuals trading. Explore the Solana RWA intelligence hub at [sol.systemr.ai](https://sol.systemr.ai).
 
 ---
 
