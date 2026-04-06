@@ -17,7 +17,7 @@
 
 Research. Planning. Execution. Trade management. Journaling. Data analysis. Feedback loop. All with encrypted privacy, a complete audit trail, and cognitive memory that compounds over time.
 
-55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system — domain-expert workflows that reason about risk, markets, and portfolio construction, not generic chatbot responses.
+55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system — domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
 
 **Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
 
