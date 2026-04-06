@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/banner.svg">
-  <img alt="System R AI — The Trading Operating System for AI Agents" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/banner.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/hero.svg">
+  <img alt="System R AI — The Trading Operating System for AI Agents" src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/hero.svg" width="100%">
 </picture>
 
 <p align="center">
