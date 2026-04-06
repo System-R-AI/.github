@@ -55,7 +55,7 @@ Explore Solana RWA intelligence at [sol.systemr.ai](https://sol.systemr.ai).
 
 ### How it works
 
-<img src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/architecture.svg" alt="System R Architecture" width="100%">
+<img src="https://raw.githubusercontent.com/System-R-AI/.github/main/assets/arch.svg" alt="System R Architecture" width="100%">
 
 ---
 
