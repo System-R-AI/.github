@@ -116,8 +116,8 @@
   <text x="1010" y="474" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#EF9F27" fill-opacity="0.7">Markets, Events</text>
 
   <!-- ==================== RETURN PATH (dashed) ==================== -->
-  <!-- Routes from System R bottom, left to the gap between MCP/SDK and REST/x402, then up to agent -->
-  <path d="M380 488 L131 488 L131 428 L131 368 L131 310" fill="none" stroke="#3ECF8E" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#arrow-dash)"/>
-  <text x="260" y="502" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#3ECF8E" fill-opacity="0.6">Results + memory</text>
+  <!-- Routes from System R bottom, left past all connection blocks, then up to agent -->
+  <path d="M380 488 L48 488 L48 310" fill="none" stroke="#3ECF8E" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#arrow-dash)"/>
+  <text x="214" y="504" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#3ECF8E" fill-opacity="0.6">Results + memory</text>
 
 </svg>
