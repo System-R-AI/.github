@@ -17,19 +17,17 @@
 
 Research. Planning. Execution. Trade management. Journaling. Data analysis. Feedback loop. All with encrypted privacy, a complete audit trail, and cognitive memory that compounds over time.
 
-55 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
+68 tools across six layers. 25 brokers and exchanges across equities, options, futures, crypto, forex, and prediction markets. One platform that covers the full lifecycle of every trade. System R operates through its own specialized agentic system with domain-expert workflows that reason about risk, markets, and portfolio construction, not generalized LLM responses.
 
-System R gives you full control over how LLMs are used. Choose a single model, select multiple models and let System R's routing protocol assign each task to the best-qualified model automatically, or use System R's own curated protocol where model selection is fully optimized for trading and investment workflows. 9 models available today including Claude, GPT, DeepSeek, and Llama.
+System R handles model selection automatically. A proprietary routing protocol assigns each task to the best-qualified model from a curated stack of 7 LLMs, optimized for trading and investment workflows. No manual model selection, no configuration needed.
 
-Prefer your own provider? Bring your own Anthropic, OpenAI, or any other LLM API key and pay your provider directly with zero LLM markup from System R.
-
-The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain layer, anchored in the G-formula: **G = E[R] - σ²/2**, where geometric growth is maximized by increasing expected return while minimizing variance drag. Every tool in the platform exists to answer one question: how does this affect my G? Intelligence is just a layer on top of it, whether it comes from in-house offerings or external providers.
+The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain layer, anchored in the G-formula: **G = E[R] - σ²/2**, where geometric growth is maximized by increasing expected return while minimizing variance drag. Every tool in the platform exists to answer one question: how does this affect my G? Intelligence is just a layer on top of it.
 
 **Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
 
 **AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
 
-**Fair, transparent pricing.** Every tool call, every LLM request, every broker order is a micro-transaction on a **usage-based compute credit** system. No subscriptions, no monthly fees, credits never expire. Fund your account with stripe payment, stablecoins (USDC/USDT/PYUSD), SOL, or the **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** for a 50% credit bonus.
+**Fair, transparent pricing.** All 68 tools are completely free. You only pay when an LLM is used. Cost varies by query complexity. No subscriptions, no monthly fees, credits never expire. Fund your account with Stripe, stablecoins (USDC/USDT/PYUSD), SOL, or the **[OSR token](https://solscan.io/token/E2grvu8fyeeuVaxj2DrHVBqv8j21jK3vyJpXG8FJjJNc)** for a 50% credit bonus.
 
 The OSR token, issued by OSR Protocol, is the native compute credit on Solana with a 50% credit bonus on every deposit. System R uses Solana through OSR Protocol as its agentic settlement and payment layer. Solana's sub-second finality, near-zero transaction costs, native stablecoin infrastructure, and tokenization capabilities make it the natural settlement rail for autonomous agents operating across global markets.
 
@@ -90,26 +88,26 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 
 ---
 
-### 55 tools, six layers
+### 68 tools, six layers — all free
 
 <details>
 <summary><strong>Risk</strong> | 12 tools &nbsp; <sub>Position sizing, validation, and controls</sub></summary>
 <br>
 
-| Tool | What it does | Cost |
-|:-----|:-------------|:-----|
-| `calculate_position_size` | G-formula geometric growth optimization | $0.003 |
-| `check_trade_risk` | Iron Fist risk validation (position + portfolio + daily limits) | $0.004 |
-| `evaluate_performance` | G-metric analysis (score, grade, rolling trend) | $0.10 - $1.00 |
-| `analyze_drawdown` | Drawdown periods, depth, recovery time | $0.005 |
-| `run_monte_carlo` | 1,000-10,000 simulated equity paths | $0.008 |
-| `calculate_kelly` | Kelly criterion (full, half, quarter) | $0.004 |
-| `find_variance_killers` | Trades that damage geometric growth | $0.006 |
-| `analyze_win_loss` | Win/loss statistics and streaks | $0.004 |
-| `run_what_if` | G-improvement scenarios | $0.008 |
-| `analyze_confidence` | Confidence intervals on R-multiples | $0.005 |
-| `analyze_risk_adjusted` | Sharpe, Sortino, Calmar ratios | $0.005 |
-| `calculate_system_r_score` | Composite score 0-100, grade A+ through F | $0.005 |
+| Tool | What it does |
+|:-----|:-------------|
+| `calculate_position_size` | G-formula geometric growth optimization |
+| `check_trade_risk` | Iron Fist risk validation (position + portfolio + daily limits) |
+| `evaluate_performance` | G-metric analysis (score, grade, rolling trend) |
+| `analyze_drawdown` | Drawdown periods, depth, recovery time |
+| `run_monte_carlo` | 1,000-10,000 simulated equity paths |
+| `calculate_kelly` | Kelly criterion (full, half, quarter) |
+| `find_variance_killers` | Trades that damage geometric growth |
+| `analyze_win_loss` | Win/loss statistics and streaks |
+| `run_what_if` | G-improvement scenarios |
+| `analyze_confidence` | Confidence intervals on R-multiples |
+| `analyze_risk_adjusted` | Sharpe, Sortino, Calmar ratios |
+| `calculate_system_r_score` | Composite score 0-100, grade A+ through F |
 
 </details>
 
@@ -117,19 +115,19 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 <summary><strong>Intelligence</strong> | 11 tools &nbsp; <sub>Market regime, patterns, and signals</sub></summary>
 <br>
 
-| Tool | What it does | Cost |
-|:-----|:-------------|:-----|
-| `detect_patterns` | Breakouts, pullbacks, MA crossovers, RSI divergences, gaps | $0.008 |
-| `detect_structural_break` | Distribution break detection (recent vs historical) | $0.006 |
-| `analyze_trend_structure` | Bollinger/ATR expansion, compression, squeeze detection | $0.006 |
-| `calculate_indicators` | SMA, EMA, RSI, MACD, Bollinger Bands, ATR | $0.004 |
-| `analyze_price_structure` | Support/resistance, swing points, consolidation zones | $0.006 |
-| `analyze_correlations` | Multi-symbol correlation matrix | $0.008 |
-| `analyze_liquidity` | Volume analysis (normal, thinning, stressed, spike) | $0.004 |
-| `analyze_greeks` | Options Greeks portfolio exposure | $0.006 |
-| `analyze_iv_surface` | Implied volatility surface structure | $0.008 |
-| `analyze_futures_curve` | Term structure (contango, backwardation, flat) | $0.006 |
-| `analyze_options_flow` | Options order flow directional signals | $0.006 |
+| Tool | What it does |
+|:-----|:-------------|
+| `detect_patterns` | Breakouts, pullbacks, MA crossovers, RSI divergences, gaps |
+| `detect_structural_break` | Distribution break detection (recent vs historical) |
+| `analyze_trend_structure` | Bollinger/ATR expansion, compression, squeeze detection |
+| `calculate_indicators` | SMA, EMA, RSI, MACD, Bollinger Bands, ATR |
+| `analyze_price_structure` | Support/resistance, swing points, consolidation zones |
+| `analyze_correlations` | Multi-symbol correlation matrix |
+| `analyze_liquidity` | Volume analysis (normal, thinning, stressed, spike) |
+| `analyze_greeks` | Options Greeks portfolio exposure |
+| `analyze_iv_surface` | Implied volatility surface structure |
+| `analyze_futures_curve` | Term structure (contango, backwardation, flat) |
+| `analyze_options_flow` | Options order flow directional signals |
 
 </details>
 
@@ -137,26 +135,26 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 <summary><strong>Analysis</strong> | 18 tools &nbsp; <sub>Statistical analysis and diagnostics</sub></summary>
 <br>
 
-| Tool | What it does | Cost |
-|:-----|:-------------|:-----|
-| `analyze_consistency` | Behavioral drift detection | $0.005 |
-| `analyze_correlation` | Serial correlation in trade outcomes | $0.005 |
-| `analyze_distribution` | Skewness, kurtosis, normality testing | $0.005 |
-| `analyze_recovery` | Recovery patterns after drawdowns | $0.005 |
-| `segment_trades` | G-metrics by symbol, day, strategy, or regime | $0.005 |
-| `analyze_execution_quality` | MAE/MFE analysis | $0.005 |
-| `detect_peak_valley` | Peaks and valleys in equity curve | $0.005 |
-| `calculate_rolling_g` | Rolling G over sliding windows | $0.005 |
-| `calculate_equity_curve` | Equity curve from trade history | $0.004 |
-| `score_signal` | Signal quality scoring | $0.003 |
-| `analyze_trade_outcome` | Individual trade outcome analysis | $0.003 |
-| `calculate_margin` | Margin requirement calculation | $0.002 |
-| `evaluate_scanner` | Scanner/screener evaluation | $0.005 |
-| `calculate_pnl` | Profit/loss calculation | $0.003 |
-| `calculate_expected_value` | Expected value per trade | $0.004 |
-| `check_compliance` | Compliance rule validation | $0.004 |
-| `detect_regime` | Market regime classification | $0.006 |
-| `detect_anomalies` | Trades deviating from your patterns | $0.006 |
+| Tool | What it does |
+|:-----|:-------------|
+| `analyze_consistency` | Behavioral drift detection |
+| `analyze_correlation` | Serial correlation in trade outcomes |
+| `analyze_distribution` | Skewness, kurtosis, normality testing |
+| `analyze_recovery` | Recovery patterns after drawdowns |
+| `segment_trades` | G-metrics by symbol, day, strategy, or regime |
+| `analyze_execution_quality` | MAE/MFE analysis |
+| `detect_peak_valley` | Peaks and valleys in equity curve |
+| `calculate_rolling_g` | Rolling G over sliding windows |
+| `calculate_equity_curve` | Equity curve from trade history |
+| `score_signal` | Signal quality scoring |
+| `analyze_trade_outcome` | Individual trade outcome analysis |
+| `calculate_margin` | Margin requirement calculation |
+| `evaluate_scanner` | Scanner/screener evaluation |
+| `calculate_pnl` | Profit/loss calculation |
+| `calculate_expected_value` | Expected value per trade |
+| `check_compliance` | Compliance rule validation |
+| `detect_regime` | Market regime classification |
+| `detect_anomalies` | Trades deviating from your patterns |
 
 </details>
 
@@ -164,12 +162,26 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 <summary><strong>Planning</strong> | 4 tools &nbsp; <sub>Options and futures position building</sub></summary>
 <br>
 
-| Tool | What it does | Cost |
-|:-----|:-------------|:-----|
-| `size_options_position` | 4 modes: equity risk, premium, delta-adjusted, spread | $0.004 |
-| `size_futures_position` | 3 modes: margin-based, tick value, notional | $0.004 |
-| `build_options_plan` | Complete options plan from thesis (bullish/bearish/neutral/volatile) | $0.008 |
-| `build_futures_plan` | Structured futures plan with entry, stop, and target | $0.008 |
+| Tool | What it does |
+|:-----|:-------------|
+| `size_options_position` | 4 modes: equity risk, premium, delta-adjusted, spread |
+| `size_futures_position` | 3 modes: margin-based, tick value, notional |
+| `build_options_plan` | Complete options plan from thesis (bullish/bearish/neutral/volatile) |
+| `build_futures_plan` | Structured futures plan with entry, stop, and target |
+
+</details>
+
+<details>
+<summary><strong>Market Data</strong> | 5 tools &nbsp; <sub>Live quotes, news, and screening</sub></summary>
+<br>
+
+| Tool | What it does |
+|:-----|:-------------|
+| `get_stock_quote` | Real-time stock quotes |
+| `get_market_movers` | Top gainers, losers, and most active |
+| `get_market_overview` | Broad market summary |
+| `search_news` | Market news search |
+| `scan_market` | Screen instruments by custom criteria |
 
 </details>
 
@@ -186,7 +198,7 @@ curl -X POST https://agents.systemr.ai/v1/tools/call \
 | **Prediction Markets** | Polymarket, Kalshi |
 | **Paper Trading** | Demo broker (sandbox mode) |
 
-All broker credentials encrypted per-agent. Decrypted only at moment of execution. $0.015 per order.
+All broker credentials encrypted per-agent. Decrypted only at moment of execution.
 
 </details>
 
@@ -194,16 +206,16 @@ All broker credentials encrypted per-agent. Decrypted only at moment of executio
 <summary><strong>Memory</strong> | 8 tools &nbsp; <sub>Learning, biases, and behavioral analysis</sub></summary>
 <br>
 
-| Tool | What it does | Cost |
-|:-----|:-------------|:-----|
-| `store_memory` | Encrypted memory storage with categories | $0.003 |
-| `search_memory` | Semantic similarity search across memories | $0.003 |
-| `get_trading_biases` | Detects disposition effect, recency bias, overtrading, loss aversion, anchoring | $0.005 |
-| `get_behavioral_fingerprint` | Trading style: risk profile, hold duration, concentration, streaks | $0.005 |
-| `predict_trajectory` | Performance forecast over next N trades | $0.008 |
-| `detect_anomalies` | Extreme wins/losses, pattern breaks | $0.006 |
-| `cluster_trades` | Groups trades by outcome patterns | $0.006 |
-| `record_trade_journal` | Log completed trades with R-multiple, P&L, and notes | $0.003 |
+| Tool | What it does |
+|:-----|:-------------|
+| `store_memory` | Encrypted memory storage with categories |
+| `search_memory` | Semantic similarity search across memories |
+| `get_trading_biases` | Detects disposition effect, recency bias, overtrading, loss aversion, anchoring |
+| `get_behavioral_fingerprint` | Trading style: risk profile, hold duration, concentration, streaks |
+| `predict_trajectory` | Performance forecast over next N trades |
+| `detect_anomalies` | Extreme wins/losses, pattern breaks |
+| `cluster_trades` | Groups trades by outcome patterns |
+| `record_trade_journal` | Log completed trades with R-multiple, P&L, and notes |
 
 </details>
 
@@ -211,7 +223,7 @@ All broker credentials encrypted per-agent. Decrypted only at moment of executio
 
 ### Connect any agent
 
-System R is an MCP server. Any AI agent that speaks MCP can discover and call all 55 tools natively.
+System R is an MCP server. Any AI agent that speaks MCP can discover and call all 68 tools natively.
 
 <details>
 <summary><strong>Claude Desktop</strong></summary>
@@ -267,7 +279,7 @@ Add to `.cursor/mcp.json` in your project root:
 
 SSE endpoint: `https://agents.systemr.ai/mcp/sse`
 
-Pass your API key in session metadata. All 55 tools auto-discovered by the client.
+Pass your API key in session metadata. All 68 tools auto-discovered by the client.
 
 </details>
 
@@ -310,32 +322,23 @@ Full walkthrough: [docs.systemr.ai/getting-started/quickstart](https://docs.syst
 
 ### Pricing
 
-#### LLM models (per 1M tokens)
+**All 68 tools are free.** You only pay when the AI thinks.
 
-| Model | Input | Output |
-|:------|:------|:-------|
-| GPT-4o Mini | $0.15 | $0.60 |
-| Llama 4 Maverick | $0.50 | $0.77 |
-| GPT-5.4 Mini | $0.50 | $2.00 |
-| o4 Mini | $1.10 | $4.40 |
-| DeepSeek R1 | $0.55 | $2.19 |
-| GPT-4o | $2.50 | $10.00 |
-| GPT-5.3 | $5.00 | $15.00 |
-| Claude Sonnet 4.6 | $9.00 | $45.00 |
-| Claude Opus 4.6 | $45.00 | $225.00 |
+| What | Cost |
+|:-----|:-----|
+| **All 68 MCP tools** | **Free** |
+| **LLM usage** | Billed per use, cost varies by complexity |
 
-**BYOK** (Bring Your Own Key): Connect your own API key. LLM usage billed directly by the provider. System R charges only for tool calls.
+System R's routing protocol selects the optimal model for each request automatically. No model selection needed. No configuration required.
 
 #### Real-world cost examples
 
 | Workflow | Cost |
 |:---------|:-----|
-| Single pre-trade gate | $0.01 |
-| Position size + risk check | $0.007 |
-| Backtest diagnostic (6 tools) | ~$0.032 |
-| Chat session (Sonnet, ~2K tokens) | ~$0.10 |
-| 100 pre-trade gates / day | $1.00 |
-| Full system assessment (7 tools) | $2.00 |
+| 1,000 pre-trade gates | **Free** |
+| Full system assessment (7 tools) | **Free** |
+| 1,000 position sizing calls | **Free** |
+| 100 market scans | **Free** |
 
 #### Payment methods
 

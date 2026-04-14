@@ -44,9 +44,9 @@
   <text x="320" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#888888" letter-spacing="1">The trading operating system for humans and agents</text>
 
   <!-- Metric pills -->
-  <!-- 55 Tools -->
-  <rect x="320" y="230" width="120" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
-  <text x="380" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">55 MCP Tools</text>
+  <!-- 68 Tools -->
+  <rect x="320" y="230" width="130" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="385" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">68 Free Tools</text>
 
   <!-- 25 Brokers -->
   <rect x="455" y="230" width="120" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
