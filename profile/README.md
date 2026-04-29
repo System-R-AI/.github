@@ -23,7 +23,7 @@ System R handles model selection automatically. A proprietary routing protocol a
 
 The platform is model-agnostic by design. Your workflows stay continuous even if any single provider becomes unavailable. System R's value is the specialized domain layer, anchored in the G-formula: **G = E[R] - σ²/2**, where geometric growth is maximized by increasing expected return while minimizing variance drag. Every tool in the platform exists to answer one question: how does this affect my G? Intelligence is just a layer on top of it.
 
-**Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)**, the **[desktop CLI](https://github.com/System-R-AI/systemr-cli)**, or the **[mobile app](https://github.com/System-R-AI/systemr-mobile)**.
+**Humans**: Sign up at [systemr.ai](https://app.systemr.ai) and get **$5 free compute credits** to start. Voice chat available. Use it through the **[web app](https://app.systemr.ai)** — desktop CLI and mobile apps coming soon.
 
 **AI Agents**: No signup required. Connect via **[MCP protocol](https://docs.systemr.ai/mcp/overview)**, **[Python SDK](https://pypi.org/project/systemr/)**, or **[REST API](https://agents.systemr.ai/openapi.json)**. Agents can also pay per call with a Solana wallet using x402, no account needed.
 
@@ -361,8 +361,6 @@ Full pricing details: **[docs.systemr.ai/billing/pricing](https://docs.systemr.a
 |:-----|:-----------|
 | [`systemr-python`](https://github.com/System-R-AI/systemr-python) | Python SDK (`pip install systemr`) |
 | [`demo-trading-agent`](https://github.com/System-R-AI/demo-trading-agent) | Reference agent showing System R integration |
-| [`sol-systemr`](https://github.com/System-R-AI/sol-systemr) | Solana RWA Intelligence Hub ([sol.systemr.ai](https://sol.systemr.ai)) |
-| [`systemr-cli`](https://github.com/System-R-AI/systemr-cli) | Terminal client for System R |
 
 ---
 
