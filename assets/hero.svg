@@ -41,16 +41,16 @@
   <text x="320" y="155" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#F0F0F0" letter-spacing="6">SYSTEM R</text>
 
   <!-- Subtitle -->
-  <text x="320" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#888888" letter-spacing="1">The trading operating system for humans and agents</text>
+  <text x="320" y="200" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" fill="#888888" letter-spacing="1">Decision intelligence for trading and investing</text>
 
   <!-- Metric pills -->
-  <!-- 68 Tools -->
+  <!-- Workspace -->
   <rect x="320" y="230" width="130" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
-  <text x="385" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">68 Free Tools</text>
+  <text x="385" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">Workspace</text>
 
-  <!-- 25 Brokers -->
+  <!-- API Toolkit -->
   <rect x="455" y="230" width="120" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
-  <text x="515" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">25 Brokers</text>
+  <text x="515" y="251" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, monospace" font-size="13" fill="#3ECF8E">API Toolkit</text>
 
   <!-- Every Asset -->
   <rect x="590" y="230" width="140" height="32" rx="16" fill="#3ECF8E" fill-opacity="0.1" stroke="#3ECF8E" stroke-opacity="0.3" stroke-width="1"/>
