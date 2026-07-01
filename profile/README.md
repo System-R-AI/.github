@@ -18,6 +18,8 @@ Finance tools for agents, Python workflows, notebooks, and backend services.
 
 Use the API Toolkit when you want to connect System R finance tools into developer workflows, agent systems, notebooks, or backend services.
 
+The public API Toolkit is free compute for user-supplied inputs. It does not provide LLM access, premium market data, research enrichment, internal data, Python execution, broker/account state, or trade execution.
+
 ## Developer surfaces
 
 - Docs: https://docs.systemr.ai/
