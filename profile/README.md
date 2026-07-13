@@ -1,62 +1,46 @@
 # System R AI
 
-System R AI is a decision intelligence system for trading and investing.
+System R AI is an Agentic Trading System for individuals and organizations deploying meaningful capital in markets for risk-adjusted returns.
 
-It helps active traders, developers, and AI systems structure market work through research, planning, journaling, review, and finance tools.
+The current open beta is trader-directed. It supports agentic research, analysis, planning, logging, and review while the trader remains responsible for every decision and action. The autonomous Agentic Trading System and remaining features are scheduled to launch on or before September 7, 2026.
 
-## Products
+## Agentic Trading System
 
-### Agentic Trading Workspace
+System R AI follows the trader's workflow across connected product surfaces:
 
-For active traders to research, plan, journal, and review decisions.
+- Personalize markets, trading style, strategy notes, timeframe, and risk defaults.
+- Organize related chats, files, assets, themes, notes, and research in projects.
+- Scan supported markets for candidates and evidence.
+- Research and analyze market questions with connected context.
+- Build structured trade plans with risk controls and human approval.
+- Log decisions, rationale, records, and outcomes.
+- Review performance and improve as context builds.
 
-Use the workspace when you want a structured place to think through trading and investing decisions with context, memory, risk review, and process.
+## Product status
 
-### API Toolkit
+Available now in open beta:
 
-Finance tools for agents, Python workflows, notebooks, and backend services.
+- Agentic research
+- Analysis
+- Planning
+- Logging
+- Review
 
-Use the API Toolkit when you want to connect System R finance tools into developer workflows, agent systems, notebooks, or backend services.
+Launching on or before September 7, 2026:
 
-The public API Toolkit is free compute for user-supplied inputs. It does not provide LLM access, premium market data, research enrichment, internal data, Python execution, broker/account state, or trade execution.
-
-## Developer surfaces
-
-- Docs: https://docs.systemr.ai/
-- Agents: https://agents.systemr.ai/
-- Python SDK: https://github.com/System-R-AI/systemr-python
-- Demo agent: https://github.com/System-R-AI/demo-trading-agent
+- The autonomous system and remaining features
 
 ## Trust boundary
 
-System R is software for decision support.
-
-It is not financial advice.
-It is not a broker.
-It is not a signal service.
-It does not guarantee profits.
-AI outputs can be wrong.
-Users remain responsible for their own trading and investing decisions.
+System R AI is software for trading support. It is not financial advice, not a broker, not a signal service, and not a guarantee of results. AI outputs can be wrong. Users remain responsible for their own trading and investing actions.
 
 ## Official links
 
 - Website: https://systemr.ai/
-- Agentic Trading Workspace: https://systemr.ai/product/agentic-trading-workspace/
-- API Toolkit: https://systemr.ai/product/developer-tools/
+- Agentic Trading System: https://systemr.ai/agentic-trading/
 - Pricing: https://systemr.ai/pricing/
-- FAQ: https://systemr.ai/resources/faq/
-- Docs: https://docs.systemr.ai/
-- Agents: https://agents.systemr.ai/
+- User guide: https://systemr.ai/learn/user-guide/
+- Principles of Trading: https://systemr.ai/learn/systematic-trading/
 - App: https://app.systemr.ai/register
 - YouTube: https://www.youtube.com/@systemr_ai
 - Ashim Nandi: https://ashimnandi.com/
-
-## Public repositories
-
-### systemr-python
-
-Python SDK for the System R AI API Toolkit.
-
-### demo-trading-agent
-
-Reference agent workflow using System R AI finance tools for decision-support examples.
