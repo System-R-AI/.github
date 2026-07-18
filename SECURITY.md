@@ -22,4 +22,4 @@ This policy applies to all repositories under the [System-R-AI](https://github.c
 
 ## Platform Security
 
-System R uses per-agent AES encryption, zero-trust architecture, and comprehensive audit trails. For details, see [docs.systemr.ai/security](https://docs.systemr.ai/security/encryption).
+Current public product information is available at [systemr.ai](https://systemr.ai/).

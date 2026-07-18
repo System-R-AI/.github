@@ -1,6 +1,6 @@
 # System R AI
 
-System R AI is an Agentic Trading System for individuals and organizations deploying meaningful capital in markets for risk-adjusted returns.
+System R AI is an Agentic Trading System built to manage meaningful capital across global markets for risk-adjusted returns.
 
 The current open beta is trader-directed. It supports agentic research, analysis, planning, logging, and review while the trader remains responsible for every decision and action. The autonomous Agentic Trading System and remaining features are scheduled to launch on or before September 7, 2026.
 
@@ -30,9 +30,13 @@ Launching on or before September 7, 2026:
 
 - The autonomous system and remaining features
 
+## Who it is for
+
+System R AI is built for any individual or organization deploying meaningful capital in the market for risk-adjusted returns.
+
 ## Trust boundary
 
-System R AI is software for trading support. It is not financial advice, not a broker, not a signal service, and not a guarantee of results. AI outputs can be wrong. Users remain responsible for their own trading and investing actions.
+System R AI is software. Not financial advice. Trading involves risk.
 
 ## Official links
 
@@ -40,7 +44,7 @@ System R AI is software for trading support. It is not financial advice, not a b
 - Agentic Trading System: https://systemr.ai/agentic-trading/
 - Pricing: https://systemr.ai/pricing/
 - User guide: https://systemr.ai/learn/user-guide/
-- Principles of Trading: https://systemr.ai/learn/systematic-trading/
+- First Principles of Trading: https://systemr.ai/learn/systematic-trading/
 - App: https://app.systemr.ai/register
 - YouTube: https://www.youtube.com/@systemr_ai
 - Ashim Nandi: https://ashimnandi.com/
