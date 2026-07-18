@@ -2,7 +2,7 @@
 
 System R AI is an Agentic Trading System built to manage meaningful capital across global markets for risk-adjusted returns.
 
-The current open beta is trader-directed. It supports agentic research, analysis, planning, logging, and review while the trader remains responsible for every decision and action. The autonomous Agentic Trading System and remaining features are scheduled to launch on or before September 7, 2026.
+The current open beta is trader-directed. It supports agentic research, analysis, planning, logging, and review. The autonomous Agentic Trading System and remaining features are scheduled to launch on or before September 7, 2026.
 
 ## Agentic Trading System
 
