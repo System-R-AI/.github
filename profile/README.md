@@ -45,6 +45,5 @@ System R AI is software. Not financial advice. Trading involves risk.
 - Pricing: https://systemr.ai/pricing/
 - User guide: https://systemr.ai/learn/user-guide/
 - First Principles of Trading: https://systemr.ai/learn/systematic-trading/
-- App: https://app.systemr.ai/register
 - YouTube: https://www.youtube.com/@systemr_ai
 - Ashim Nandi: https://ashimnandi.com/
