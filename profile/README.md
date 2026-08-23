@@ -17,9 +17,6 @@ System R AI is a quantitative investment and trading platform for investors and 
 
 System R AI supports systematic work across equities, ETFs, indices, options, and digital assets.
 
-## Public developer tools
-
-The System R AI public API Toolkit provides finance compute tools for developer workflows using user-supplied inputs. Public repositories include the Python SDK and reference agent examples. These tools support decision workflows and do not place orders or execute trades.
 
 ## Trust boundary
 
@@ -31,8 +28,4 @@ System R AI is software. It does not provide financial advice. Trading and inves
 - Who We Are: https://systemr.ai/who-we-are/
 - What We Do: https://systemr.ai/what-we-do/
 - Resources: https://systemr.ai/resources/
-- Connect: https://systemr.ai/connect/
-- Developer docs: https://docs.systemr.ai/
-- Python SDK: https://github.com/System-R-AI/systemr-python
-- Reference agent: https://github.com/System-R-AI/demo-trading-agent
 - YouTube: https://www.youtube.com/@systemr_ai
