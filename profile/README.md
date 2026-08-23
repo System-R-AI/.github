@@ -1,49 +1,38 @@
 # System R AI
 
-System R AI is an Agentic Trading System built to manage meaningful capital across global markets for risk-adjusted returns.
+System R AI is a quantitative investment and trading platform for investors and asset managers. Based in the United States and built with global markets in view, it builds agentic systems that combine investment and trading workflows with big data analytics and proprietary AI across research, risk, execution, and oversight. It is designed for systematic, auditable decisions across equities, ETFs, indices, options, and digital assets.
 
-The current open beta is trader-directed. It supports agentic research, analysis, planning, logging, and review. The autonomous Agentic Trading System and remaining features are scheduled to launch on or before September 7, 2026.
+## What we build
 
-## Agentic Trading System
+- Agentic workflows across research and analysis, strategy and risk, execution and oversight.
+- Big data analytics that structure market, fundamental, and portfolio data for systematic decisions.
+- Proprietary AI engineered for investment and trading workflows with defined calculations, risk controls, and auditable records.
 
-System R AI follows the trader's workflow across connected product surfaces:
+## Who we serve
 
-- Personalize markets, trading style, strategy notes, timeframe, and risk defaults.
-- Organize related chats, files, assets, themes, notes, and research in projects.
-- Scan supported markets for candidates and evidence.
-- Research and analyze market questions with connected context.
-- Build structured trade plans with risk controls and human approval.
-- Log decisions, rationale, records, and outcomes.
-- Review performance and improve as context builds.
+- Professional investors, family offices, and investment principals managing their own or family capital.
+- Registered investment advisers, wealth and portfolio managers, hedge funds, and investment firms managing client or institutional capital.
 
-## Product status
+## Market coverage
 
-Available now in open beta:
+System R AI supports systematic work across equities, ETFs, indices, options, and digital assets.
 
-- Agentic research
-- Analysis
-- Planning
-- Logging
-- Review
+## Public developer tools
 
-Launching on or before September 7, 2026:
-
-- The autonomous system and remaining features
-
-## Who it is for
-
-System R AI is built for any individual or organization deploying meaningful capital in the market for risk-adjusted returns.
+The System R AI public API Toolkit provides finance compute tools for developer workflows using user-supplied inputs. Public repositories include the Python SDK and reference agent examples. These tools support decision workflows and do not place orders or execute trades.
 
 ## Trust boundary
 
-System R AI is software. Not financial advice. Trading involves risk.
+System R AI is software. It does not provide financial advice. Trading and investing involve risk.
 
 ## Official links
 
 - Website: https://systemr.ai/
-- Agentic Trading System: https://systemr.ai/agentic-trading/
-- Pricing: https://systemr.ai/pricing/
-- User guide: https://systemr.ai/learn/user-guide/
-- First Principles of Trading: https://systemr.ai/learn/systematic-trading/
+- Who We Are: https://systemr.ai/who-we-are/
+- What We Do: https://systemr.ai/what-we-do/
+- Resources: https://systemr.ai/resources/
+- Connect: https://systemr.ai/connect/
+- Developer docs: https://docs.systemr.ai/
+- Python SDK: https://github.com/System-R-AI/systemr-python
+- Reference agent: https://github.com/System-R-AI/demo-trading-agent
 - YouTube: https://www.youtube.com/@systemr_ai
-- Ashim Nandi: https://ashimnandi.com/
