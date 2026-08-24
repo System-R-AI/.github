@@ -1,6 +1,6 @@
 # System R AI
 
-System R AI is a quantitative investment and trading platform for investors and asset managers. Based in the United States and built with global markets in view, it builds agentic systems that combine investment and trading workflows with big data analytics and proprietary AI across research, risk, execution, and oversight. It is designed for systematic, auditable decisions across equities, ETFs, indices, options, and digital assets.
+System R AI is an agentic investment and trading platform for investors and asset managers. Based in the United States and built with global markets in view, it builds agentic systems that combine investment and trading workflows with big data analytics and proprietary AI across research, risk, execution, and oversight. It is designed for systematic, auditable decisions across equities, ETFs, indices, options, and digital assets.
 
 ## What we build
 
