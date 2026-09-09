@@ -1,30 +1,18 @@
 # System R AI
 
-System R AI is an agentic capital efficiency and treasury risk engine engineered for Single & Multi-Family Offices, Macro/CTA funds, and Corporate Treasuries. Based in the United States and built for global markets, System R AI replaces capital-heavy legacy infrastructure with non-custodial agentic architectures. The platform unifies real-time analytics, dynamic risk modeling, and deterministic AI controls across research, risk management, execution, and fiduciary oversight.
+System R AI is an agentic capital efficiency and treasury risk engine. 
 
-## What We Build
+The platform provides non custodial agentic architectures that unify real time market data, dynamic risk modeling, and deterministic execution across global macro and currency markets.
 
-* **Agentic Workflows:** Autonomous pipelines covering multi-asset research, dynamic risk modeling, execution algorithms, and compliance oversight.
-* **Capital Efficiency Architecture:** Non-custodial frameworks enforcing 95/5 idle cash sweep strategies and automated CME futures FX delta balancing.
-* **Big Data & Risk Analytics:** Production-grade data pipelines structuring tick market feeds, macro indicators, and portfolio delta for systematic risk control.
-* **Deterministic AI & Auditability:** AI systems engineered with strict mathematical constraints, execution boundaries, and immutable audit logs.
+## Core Architecture
 
-## Who We Serve
+* **Deterministic AI & Risk Governance:** Execution models bounded by strict quantitative risk constraints and immutable audit logging.
+* **Non Custodial Execution:** Zero custody API orchestration.
+* **Multi Asset Pipelines:** Real time data ingestion and automated execution across FX , treasury yield sweeps, and global derivatives.
 
-* **Family Offices (SFOs / MFOs):** Capital preservation, 95/5 yield optimization, and foreign currency risk mitigation.
-* **Macro & CTA Funds:** 24/7 continuous agentic execution across global exchange hours without overnight desk friction.
-* **Corporate Treasuries:** Counterparty-safe FX locking via non-custodial API execution to eliminate balance sheet volatility.
+## System Boundaries
 
-## Market Coverage & Instruments
-
-System R AI supports systematic, auditable execution across:
-* **FX Derivatives & Futures:** CME currency futures, forward curves, and FX delta balancing.
-* **Treasury & Money Markets:** Yield-bearing sweep instruments and idle capital optimization.
-* **Global Portfolios & Alternatives:** Multi-currency equities, ETFs, options, and liquid digital assets/basis trades.
-
-## Trust Boundary & Governance
-
-System R AI is software infrastructure. It does not act as a custodian, broker-dealer, or financial advisor. All automated execution operates via non-custodial API interfaces governed by explicit risk parameters set by the institutional user. Trading and market operations involve risk of loss.
+System R AI is enterprise software infrastructure. It does not provide financial advice, manage third party capital, or act as a custodian/broker dealer. All execution algorithms run via non custodial API integrations under explicit user defined risk parameters.
 
 ## Official links
 
