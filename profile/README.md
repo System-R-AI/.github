@@ -1,26 +1,30 @@
 # System R AI
 
-System R AI is an agentic investment and trading platform for investors and asset managers. Based in the United States and built with global markets in view, it builds agentic systems that combine investment and trading workflows with big data analytics and proprietary AI across research, risk, execution, and oversight. It is designed for systematic, auditable decisions across equities, ETFs, indices, options, and digital assets.
+System R AI is an agentic capital efficiency and treasury risk engine engineered for Single & Multi-Family Offices, Macro/CTA funds, and Corporate Treasuries. Based in the United States and built for global markets, System R AI replaces capital-heavy legacy infrastructure with non-custodial agentic architectures. The platform unifies real-time analytics, dynamic risk modeling, and deterministic AI controls across research, risk management, execution, and fiduciary oversight.
 
-## What we build
+## What We Build
 
-- Agentic workflows across research and analysis, strategy and risk, execution and oversight.
-- Big data analytics that structure market, fundamental, and portfolio data for systematic decisions.
-- Proprietary AI engineered for investment and trading workflows with defined calculations, risk controls, and auditable records.
+* **Agentic Workflows:** Autonomous pipelines covering multi-asset research, dynamic risk modeling, execution algorithms, and compliance oversight.
+* **Capital Efficiency Architecture:** Non-custodial frameworks enforcing 95/5 idle cash sweep strategies and automated CME futures FX delta balancing.
+* **Big Data & Risk Analytics:** Production-grade data pipelines structuring tick market feeds, macro indicators, and portfolio delta for systematic risk control.
+* **Deterministic AI & Auditability:** AI systems engineered with strict mathematical constraints, execution boundaries, and immutable audit logs.
 
-## Who we serve
+## Who We Serve
 
-- Professional investors, family offices, and investment principals managing their own or family capital.
-- Registered investment advisers, wealth and portfolio managers, hedge funds, and investment firms managing client or institutional capital.
+* **Family Offices (SFOs / MFOs):** Capital preservation, 95/5 yield optimization, and foreign currency risk mitigation.
+* **Macro & CTA Funds:** 24/7 continuous agentic execution across global exchange hours without overnight desk friction.
+* **Corporate Treasuries:** Counterparty-safe FX locking via non-custodial API execution to eliminate balance sheet volatility.
 
-## Market coverage
+## Market Coverage & Instruments
 
-System R AI supports systematic work across equities, ETFs, indices, options, and digital assets.
+System R AI supports systematic, auditable execution across:
+* **FX Derivatives & Futures:** CME currency futures, forward curves, and FX delta balancing.
+* **Treasury & Money Markets:** Yield-bearing sweep instruments and idle capital optimization.
+* **Global Portfolios & Alternatives:** Multi-currency equities, ETFs, options, and liquid digital assets/basis trades.
 
+## Trust Boundary & Governance
 
-## Trust boundary
-
-System R AI is software. It does not provide financial advice. Trading and investing involve risk.
+System R AI is software infrastructure. It does not act as a custodian, broker-dealer, or financial advisor. All automated execution operates via non-custodial API interfaces governed by explicit risk parameters set by the institutional user. Trading and market operations involve risk of loss.
 
 ## Official links
 
